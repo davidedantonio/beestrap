@@ -1,0 +1,49 @@
+# Dependencies
+markdown:       kramdown
+highlighter:    rouge
+
+kramdown:
+  auto_ids:     true
+
+# Permalinks
+permalink:      pretty
+
+# Server
+source:         "./site"
+destination:    ./_gh_pages
+host:           0.0.0.0
+port:           9001
+baseurl:        ""
+url:            "http://localhost/9001"
+encoding:       UTF-8
+exclude:
+  - .git/
+  - .github/
+  - assets/scss/
+  - build/
+  - js/
+  - node_modules/
+  - scss/
+  - composer.json
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+
+# Social
+title:              Beestrap
+description:        "A microframework based on CSS Grid Layout to build various types of grids thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes to organize your content."
+twitter:            beestrap
+authors:            "Davide D'Antonio"
+
+# Custom variables
+current_version:      1.0.0
+docs_version:         1.0
+repo:                 "https://github.com/davidedantonio/beestrap.git"
+github:               "https://github.com/davidedantonio/beestrap"
+twitter:              "https://twitter.com/davidedantonio"
+
+download:
+  source:           "https://github.com/davidedantonio/beestrap/archive/master.zip"
+  dist:             "https://github.com/davidedantonio/beestrap/archive/v1.0.0.zip"
