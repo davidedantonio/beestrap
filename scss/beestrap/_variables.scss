@@ -1,0 +1,32 @@
+// Redefine Bootstrap colors
+
+$font-family-sans-serif:          "Montserrat", "Helvetica Neue",  arial, sans-serif !default;
+
+$primary-color:       #60be93 !default;
+$secondary-color:     #5e6373 !default;
+$success-color:       #18ce0f !default;
+$info-color:          #2ca8ff !default;
+$warning-color:       #ffb236 !default;
+$danger-color:        #ff3636 !default;
+
+$primary:               $primary-color !default;
+$secondary:             $secondary-color !default;
+$success:               $success-color !default;
+$info:                  $info-color !default;
+$warning:               $warning-color !default;
+$danger:                $danger-color !default;
+
+$theme-colors: () !default;
+// stylelint-disable
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+  ),
+  $theme-colors
+);
+// stylelint-enabled
