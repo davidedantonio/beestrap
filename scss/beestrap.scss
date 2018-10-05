@@ -1,9 +1,34 @@
-// Include in Beestrap Bootstrap scss souces
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+ // Bootstrap components
 
-// Import Beestrap variables and mixins
-@import "beestrap/variables";
-@import "beestrap/mixins/mixins.scss";
-
-// Core CSS
-@import "beestrap/buttons";
+ @import "beestrap/bootstrap/root";
+ @import "beestrap/bootstrap/reboot";
+ @import "beestrap/bootstrap/type";
+ @import "beestrap/bootstrap/images";
+ @import "beestrap/bootstrap/code";
+ @import "beestrap/bootstrap/grid";
+ @import "beestrap/bootstrap/tables";
+ @import "beestrap/bootstrap/forms";
+ @import "beestrap/bootstrap/buttons";
+ @import "beestrap/bootstrap/transitions";
+ @import "beestrap/bootstrap/dropdown";
+ @import "beestrap/bootstrap/button-group";
+ @import "beestrap/bootstrap/input-group";
+ @import "beestrap/bootstrap/custom-forms";
+ @import "beestrap/bootstrap/nav";
+ @import "beestrap/bootstrap/navbar";
+ @import "beestrap/bootstrap/card";
+ @import "beestrap/bootstrap/breadcrumb";
+ @import "beestrap/bootstrap/pagination";
+ @import "beestrap/bootstrap/badge";
+ @import "beestrap/bootstrap/jumbotron";
+ @import "beestrap/bootstrap/alert";
+ @import "beestrap/bootstrap/progress";
+ @import "beestrap/bootstrap/media";
+ @import "beestrap/bootstrap/list-group";
+ @import "beestrap/bootstrap/close";
+ @import "beestrap/bootstrap/modal";
+ @import "beestrap/bootstrap/tooltip";
+ @import "beestrap/bootstrap/popover";
+ @import "beestrap/bootstrap/carousel";
+ @import "beestrap/bootstrap/utilities";
+ @import "beestrap/bootstrap/print";
