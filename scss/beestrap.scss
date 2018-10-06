@@ -1,11 +1,13 @@
-// Beestrap Variables
+// Beestrap Core
 @import "beestrap/bootstrap/functions";
 
+@import "beestrap/custom/variables";
 @import "beestrap/bootstrap/variables";
 
+@import "beestrap/custom/mixins";
 @import "beestrap/bootstrap/mixins";
-// Bootstrap components
 
+// Bootstrap components
 @import "beestrap/bootstrap/root";
 @import "beestrap/bootstrap/reboot";
 @import "beestrap/bootstrap/type";
@@ -38,3 +40,6 @@
 @import "beestrap/bootstrap/carousel";
 @import "beestrap/bootstrap/utilities";
 @import "beestrap/bootstrap/print";
+
+@import "beestrap/custom/typography";
+@import "beestrap/custom/buttons";

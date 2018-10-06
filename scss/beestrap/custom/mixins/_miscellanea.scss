@@ -1,0 +1,12 @@
+@mixin diagonal-gradient($start-color, $end-color) {
+  background: linear-gradient(to bottom left, $start-color, $end-color, $start-color);
+  background-position: top right;
+  background-size: 210% 210%;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)};
+  opacity: $opacity;
+}
