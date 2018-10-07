@@ -122,7 +122,7 @@ $warning-states:       #ff6491 !default;
 $danger-states:        #ec250d !default;
 $black-states:         #1d253b !default;
 
-$background-black:           #1e1e2f !default;
+$background-black:           #14172e !default;
 $background-states-black:    #1e1e24 !default;
 
 // opacity
@@ -192,6 +192,21 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
+$common-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$common-colors: map-merge(
+  (
+    "default":      $default,
+    "primary":      $primary,
+    "secondary":    $secondary,
+    "success":      $success,
+    "info":         $info,
+    "warning":      $warning,
+    "danger":       $danger
+  ),
+  $common-colors
+);
+
 $brand-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $brand-colors: map-merge(
@@ -249,7 +264,7 @@ $love-color: $red !default;
 // Body
 
 $body-bg: $background-black !default;
-$body-color: $gray-700 !default;
+$body-color: $gray-500 !default;
 
 
 // Sections
@@ -358,11 +373,11 @@ $border-thick:               2px !default;
 $border-width:               .0625rem !default;
 $border-color:               $gray-200 !default;
 
-$border-radius:              .25rem !default;
-$border-radius-xl:           .875rem !default;
-$border-radius-lg:           .4285rem !default;
-$border-radius-sm:           .2857rem !default;
-$border-radius-xs:           .1428rem !default;
+$border-radius:               .25rem !default;
+$border-radius-xl:            .545rem !default;
+$border-radius-lg:            .2585rem !default;
+$border-radius-sm:            .2857rem !default;
+$border-radius-xs:            .1428rem !default;
 
 $margin-bottom:              10px !default;
 $border:                     1px solid !default;
@@ -746,6 +761,7 @@ $nav-pills-link-hover-color:        darken(theme-color("primary"), 5%) !default;
 $nav-pills-link-active-color:       color-yiq(theme-color("primary")) !default;
 $nav-pills-link-active-bg:          theme-color("primary") !default;
 $nav-pills-box-shadow:              $btn-box-shadow !default;
+$nav-tabs-active-colors:            transparent transparent $link-color !default;
 
 // Navbar
 
@@ -917,7 +933,8 @@ $card-border-color:                 rgba($black, .05) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       $gray-100 !default;
 $card-bg:                           $white !default;
-$card-black-background:             #27293d !default;
+$card-black-background:             #1d233e !default;
+$card-black-header-background:      #222a45 !default;
 $card-img-overlay-padding:          1.25rem !default;
 
 //$card-group-margin:                 ($grid-gutter-width / 2);

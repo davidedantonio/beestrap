@@ -1,0 +1,6 @@
+@mixin form-control-placeholder($color, $opacity) {
+  .form-control::placeholder {
+    color: $color;
+    @include opacity(1);
+  }
+}

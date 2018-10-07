@@ -4,30 +4,22 @@
   box-shadow: none;
   transition: all .15s ease;
 
-  &.animation-on-hover:hover {
-    background-position: bottom left;
-    transition: .3s ease-in-out;
-  }
-
   &:hover,
-  &:active:hover,
-  &.active:hover {
-    color: $white;
-    background-color: $btn-states-color;
-    background-image: linear-gradient(to bottom left, $btn-color, $btn-states-color, $btn-color) !important;
-    box-shadow: none;
-  }
-
+  &:focus,
   &:active,
   &.active,
   &:active:focus,
-  &.active:focus {
-    background-image: linear-gradient(to top right, $btn-color, $btn-states-color, $btn-color);
+  &:active:hover,
+  &.active:focus,
+  &.active:hover {
+    color: $white;
+    background-color: $btn-states-color;
+    background-position: bottom left;
+    box-shadow: none;
   }
 
   &:not([data-action]):hover {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transform: translateY(-1px);
   }
 
   &.disabled,
@@ -138,8 +130,8 @@
     &:focus,
     &:active,
     &:not(:disabled):not(.disabled):active{
-      color: $btn-color;
-      background-color: $transparent-bg;
+      color: $white;
+      background: $btn-color;
       background-image: none;
       border-color: $btn-color;
       box-shadow: none;
@@ -233,7 +225,7 @@
 
   &:hover {
     color: $color-hover;
-    background-color: $active-background;
+    background-color: $active-background !important;
     border-color: $active-border;
   }
 
@@ -272,7 +264,7 @@
   font-size: $font-size;
   border-radius: $border;
 
-  &.btn-simple{
+  &.btn-simple {
     padding: $padding-vertical - 1 $padding-horizontal - 1;
   }
 }

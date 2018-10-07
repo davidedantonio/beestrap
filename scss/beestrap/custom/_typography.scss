@@ -21,15 +21,18 @@ textarea{
   font-family: $font-family-base;
 }
 
-.card{
+.card {
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6,
-  p {
+  h6 {
     color: $opacity-8;
+  }
+
+  p {
+    color: $gray-500;
   }
 }
 

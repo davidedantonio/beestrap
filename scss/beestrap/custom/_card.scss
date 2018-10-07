@@ -1,0 +1,222 @@
+.card {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  background: $card-black-background;
+  border: 0;
+  box-shadow: $box-shadow;
+
+  label {
+    margin-bottom: 5px;
+    font-size: $font-size-sm;
+    color: rgba($white, .6);
+  }
+
+  .card-title {
+    margin-bottom: .75rem;
+  }
+
+  .card-body {
+    padding: 15px;
+
+    &.table-full-width {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .card-title {
+      margin-bottom: .75rem;
+      font-weight: $font-weight-light;
+      color: $white;
+      text-transform: inherit;
+    }
+
+    .card-description,
+    .card-category {
+      color: rgba($white, .6);
+    }
+  }
+
+  .card-header {
+    padding: 15px 15px 0;
+    color: rgba($white, .8);
+    border: 0;
+
+    &:not([data-background-color]) {
+      background-color: $card-black-header-background;
+    }
+
+    .card-title {
+      font-weight: 100;
+      color: $white;
+    }
+
+    .card-category {
+      margin-bottom: 5px;
+      font-weight: 300;
+      color: $dark-gray;
+    }
+  }
+
+  .map {
+    border-radius: $border-radius-sm;
+
+    &.map-big{
+      height: 420px;
+    }
+  }
+
+  &.card-white {
+    background: $white;
+
+    .card-title {
+      color: $black;
+    }
+
+    .card-category,
+    .stats {
+      color: $card-stats-gray;
+    }
+
+    @include form-control-placeholder(rgba($black, .4), 1);
+
+    .has-danger {
+      .form-control,
+      .input-group-prepend .input-group-text {
+        border-color: $danger-states;
+      }
+    }
+
+    .input-group-prepend .input-group-text {
+      color: $black-states;
+      border-color: rgba($black-states, .2);
+      border-right: none;
+    }
+
+    .form-control {
+      color: $black;
+      border-color: rgba($black-states, .2);
+
+      &:focus {
+        border-color: $primary;
+      }
+    }
+
+    label:not(.btn) {
+      color: $default;
+    }
+
+    .form-group.no-border,
+    .input-group.no-border {
+      .form-control,
+      .form-control + .input-group-prepend .input-group-text,
+      .form-control + .input-group-append .input-group-text,
+      .input-group-prepend .input-group-text,
+      .input-group-append .input-group-text {
+        background-color: $opacity-gray-3;
+
+        &:focus,
+        &:active,
+        &:active{
+          background-color: $opacity-gray-5;
+        }
+      }
+
+      .form-control {
+        &:focus {
+          & + .input-group-prepend .input-group-text,
+          & + .input-group-append .input-group-text {
+            background-color: $transparent-bg;
+          }
+        }
+      }
+    }
+
+    .input-group[disabled] {
+      .input-group-prepend .input-group-text,
+      .input-group-append .input-group-text {
+        background-color: $black;
+      }
+    }
+
+    .form-control[disabled],
+    .form-control[readonly],
+    fieldset[disabled] .form-control {
+      background: $light-gray;
+      border-color: rgba($black-states, .3);
+    }
+
+    .input-group-focus {
+      .input-group-prepend .input-group-text,
+      .input-group-append .input-group-text,
+      .form-control {
+        background-color: $white;
+        border-color: $primary;
+      }
+
+      &.no-border{
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text {
+          background-color: $opacity-gray-5;
+        }
+      }
+    }
+
+    .input-group-append .input-group-text {
+      border-left: none;
+    }
+
+    .has-danger .form-control:focus,
+    .has-success.input-group-focus .input-group-append .input-group-text,
+    .has-success.input-group-focus .input-group-prepend .input-group-text {
+      border-color: $danger-states;
+    }
+
+    .has-success .form-control:focus,
+    .has-success.input-group-focus .input-group-append .input-group-text,
+    .has-success.input-group-focus .input-group-prepend .input-group-text {
+      border-color: darken($success, 10%);
+    }
+  }
+
+  &.card-plain {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .card-footer {
+    padding: 15px;
+    background-color: transparent;
+    border: 0;
+
+    .stats {
+      i {
+        position: relative;
+        margin-right: 5px;
+      }
+    }
+
+    h6 {
+      padding: 7px 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-body {
+  padding: $card-spacer-y;
+}
