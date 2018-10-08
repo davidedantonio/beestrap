@@ -11983,20 +11983,32 @@ fieldset[disabled]
   background-color: #fff;
 }
 
+.nav-pills.nav-pills-default .nav-item .nav-link.active, .nav-pills.nav-pills-default .nav-item .nav-link.active:focus, .nav-pills.nav-pills-default .nav-item .nav-link.active:hover {
+  background: linear-gradient(to bottom left, #344675, #263148, #344675);
+  background-position: top right;
+  background-size: 210% 210%;
+}
+
 .nav-pills.nav-pills-primary .nav-item .nav-link.active, .nav-pills.nav-pills-primary .nav-item .nav-link.active:focus, .nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
   background: linear-gradient(to bottom left, #6b94ff, #ba54f5, #6b94ff);
   background-position: top right;
   background-size: 210% 210%;
 }
 
-.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover {
-  background: linear-gradient(to bottom left, #6c94ff, #3358f4, #6c94ff);
+.nav-pills.nav-pills-secondary .nav-item .nav-link.active, .nav-pills.nav-pills-secondary .nav-item .nav-link.active:focus, .nav-pills.nav-pills-secondary .nav-item .nav-link.active:hover {
+  background: linear-gradient(to bottom left, #f4f5f7, , #f4f5f7);
   background-position: top right;
   background-size: 210% 210%;
 }
 
 .nav-pills.nav-pills-success .nav-item .nav-link.active, .nav-pills.nav-pills-success .nav-item .nav-link.active:focus, .nav-pills.nav-pills-success .nav-item .nav-link.active:hover {
   background: linear-gradient(to bottom left, #67cc9a, #93d377, #67cc9a);
+  background-position: top right;
+  background-size: 210% 210%;
+}
+
+.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover {
+  background: linear-gradient(to bottom left, #6c94ff, #3358f4, #6c94ff);
   background-position: top right;
   background-size: 210% 210%;
 }
@@ -12130,5 +12142,92 @@ fieldset[disabled]
 .nav-tabs.nav-tabs-danger .nav-item.show .nav-link {
   color: #f06393;
   border-color: transparent transparent #f06393;
+}
+
+.alert {
+  color: #fff;
+  border: 0;
+}
+
+.alert .alert-link {
+  color: #fff;
+}
+
+.alert.alert-success {
+  background-color: #41bf81;
+}
+
+.alert i.fa,
+.alert i.bee-icons {
+  font-size: 1rem;
+}
+
+.alert .close {
+  line-height: 0;
+  color: #fff;
+  text-shadow: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.alert span[data-notify="icon"] {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  display: block;
+  margin-top: -11px;
+  font-size: 22px;
+}
+
+.alert button.close {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-top: -13px;
+}
+
+.alert .close ~ span {
+  display: block;
+  max-width: 89%;
+}
+
+.alert.alert-with-icon {
+  padding-left: 65px;
+}
+
+.alert-dismissible .close {
+  top: 50%;
+  right: 1.25rem;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.alert-dismissible .close:hover, .alert-dismissible .close:focus {
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 1 !important;
+}
+
+.alert-dismissible .close:hover > span:not(.sr-only), .alert-dismissible .close:focus > span:not(.sr-only) {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+}
+
+@media (max-width: 575.98px) {
+  .alert-dismissible .close {
+    top: 1rem;
+    right: .5rem;
+  }
+}
+
+.alert-dismissible .close > span:not(.sr-only) {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
 }
 /*# sourceMappingURL=beestrap.css.map */

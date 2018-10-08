@@ -1,0 +1,90 @@
+//
+// Alert
+//
+
+.alert {
+  color: $white;
+  border: 0;
+
+  .alert-link {
+    color: $white;
+  }
+
+  &.alert-success {
+    background-color: darken($success, 10%);
+  }
+
+  i.fa,
+  i.#{$prefix}-icons {
+    font-size: $font-paragraph;
+  }
+
+  .close {
+    line-height: 0;
+    color: $white;
+    text-shadow: none;
+    outline: 0;
+    opacity: .9;
+  }
+
+  span[data-notify="icon"] {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    display: block;
+    margin-top: -11px;
+    font-size: 22px;
+  }
+
+  button.close {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin-top: -13px;
+  }
+
+  .close ~ span {
+    display: block;
+    max-width: 89%;
+  }
+
+  &.alert-with-icon {
+    padding-left: 65px;
+  }
+}
+
+.alert-dismissible {
+  .close {
+    top: 50%;
+    right: $alert-padding-x;
+    padding: 0;
+    color: rgba($white, .6);
+    opacity: 1;
+    transform: translateY(-50%);
+
+    &:hover,
+    &:focus {
+      color: rgba($white, .9);
+      opacity: 1 !important;
+
+      & > span:not(.sr-only) {
+        color: rgba($white, .9);
+        background-color: transparent;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      top: 1rem;
+      right: .5rem;
+    }
+
+    & > span:not(.sr-only) {
+      font-size: 1.5rem;
+      color: rgba($white, .6);
+      background-color: transparent;
+    }
+  }
+}

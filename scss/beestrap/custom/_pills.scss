@@ -81,61 +81,15 @@
     }
   }
 
-  &.nav-pills-primary {
-    .nav-item {
-      .nav-link.active {
-        &,
-        &:focus,
-        &:hover {
-          @include diagonal-gradient($primary, $primary-states);
-        }
-      }
-    }
-  }
-
-  &.nav-pills-info {
-    .nav-item {
-      .nav-link.active {
-        &,
-        &:focus,
-        &:hover{
-          @include diagonal-gradient($info, $info-states);
-        }
-      }
-    }
-  }
-
-  &.nav-pills-success {
-    .nav-item {
-      .nav-link.active {
-        &,
-        &:focus,
-        &:hover{
-          @include diagonal-gradient($success, $success-states);
-        }
-      }
-    }
-  }
-
-  &.nav-pills-warning{
-    .nav-item {
-      .nav-link.active {
-        &,
-        &:focus,
-        &:hover{
-          @include diagonal-gradient($warning, $warning-states);
-        }
-      }
-    }
-  }
-
-  &.nav-pills-danger {
-    .nav-item {
-      .nav-link.active {
-        &,
-        &:focus,
-        &:hover {
-          @include diagonal-gradient($danger, $danger-states);
+  @each $color-name, $color in $common-colors {
+    &.nav-pills-#{$color-name} {
+      .nav-item {
+        .nav-link.active {
+          &,
+          &:focus,
+          &:hover {
+            @include diagonal-gradient($color, map-get($common-states, $color-name));
+          }
         }
       }
     }

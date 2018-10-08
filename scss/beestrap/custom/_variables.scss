@@ -207,6 +207,28 @@ $common-colors: map-merge(
   $common-colors
 );
 
+$default-states:       #263148 !default;
+$primary-states:       #ba54f5 !default;
+$success-states:       #93d377 !default;
+$info-states:          #3358f4 !default;
+$warning-states:       #ff6491 !default;
+$danger-states:        #ec250d !default;
+
+
+$common-states: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$common-states: map-merge(
+  (
+    "default":      $default-states,
+    "primary":      $primary-states,
+    "success":      $success-states,
+    "info":         $info-states,
+    "warning":      $warning-states,
+    "danger":       $danger-states
+  ),
+  $common-states
+);
+
 $brand-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $brand-colors: map-merge(
