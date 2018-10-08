@@ -4,6 +4,19 @@
   background-size: 210% 210%;
 }
 
+@mixin linear-gradient($color, $states-color){
+  background: $color;
+  background: linear-gradient(0deg, $color 0%, $states-color 100%);
+}
+
+@mixin transform-translate-x($value){
+  transform: translate3d($value, 0, 0);
+}
+
+@mixin transitions($time, $type){
+  transition: all $time $type;
+}
+
 // Opacity
 @mixin opacity($opacity) {
   $opacity-ie: ($opacity * 100);
