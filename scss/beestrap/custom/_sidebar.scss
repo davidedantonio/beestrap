@@ -352,6 +352,13 @@
     }
   }
 
+  &[data="default"] {
+    @include linear-gradient($default-states, $default);
+    &::before {
+      border-bottom-color: $default;
+    }
+  }
+
   &[data="blue"] {
     @include linear-gradient($info-states, $info);
     &::before {
@@ -440,17 +447,6 @@
       }
     }
   }
-
-  &::before {
-    position: absolute;
-    top: -5px;
-    left: 40px;
-    content: "";
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid $primary;
-    border-left: 5px solid transparent;
-    transform: translate(-50%);
-  }
 }
 
 .visible-on-sidebar-regular{
@@ -480,29 +476,9 @@
   width: $full-width;
   min-height: 100vh;
   background: linear-gradient($background-black, $background-states-black);
-  border-top: 2px solid $primary;
+  //border-top: 2px solid $primary;
 
   @include transitions(.5s, cubic-bezier(.685, .0473, .346, 1));
-
-  &[data="blue"]{
-    border-top: 2px solid $info;
-  }
-
-  &[data="green"]{
-    border-top: 2px solid $success;
-  }
-
-  &[data="orange"]{
-    border-top: 2px solid $warning;
-  }
-
-  &[data="red"]{
-    border-top: 2px solid $danger;
-  }
-
-  &[data="primary"]{
-    border-top: 2px solid $primary;
-  }
 
   > .content {
     min-height: calc(100vh - 70px);
