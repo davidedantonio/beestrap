@@ -663,7 +663,7 @@
     .sidebar {
       z-index: 1030;
       display: block;
-      width: 80px;
+      width: $sidebar-mini-width;
       box-shadow: $sidebar-box-shadow;
 
       .logo{
@@ -676,6 +676,7 @@
       // stylelint-disable
       .sidebar-wrapper {
         width: $sidebar-mini-width;
+        overflow-x: hidden;
 
         > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
         .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,

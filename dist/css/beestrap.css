@@ -12974,6 +12974,7 @@ fieldset[disabled]
   }
   .sidebar-mini .sidebar .sidebar-wrapper {
     width: 80px;
+    overflow-x: hidden;
   }
   .sidebar-mini .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
   .sidebar-mini .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
