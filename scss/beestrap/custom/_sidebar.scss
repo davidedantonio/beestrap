@@ -1,6 +1,7 @@
 .wrapper {
   position: relative;
   top: 0;
+  z-index: 1050;
   height: 100vh;
 
   &.wrapper-full-page {
@@ -249,7 +250,7 @@
       float: left;
       width: 34px;
       margin-right: 12px;
-      font-size: 20px;
+      font-size: 33px;
       line-height: 30px;
       color: $opacity-8;
       text-align: center;
@@ -482,7 +483,7 @@
 
   > .content {
     min-height: calc(100vh - 70px);
-    padding: 80px 30px 30px 280px;
+    padding: 80px 30px 30px 260px;
   }
 
   > .navbar {
@@ -650,10 +651,13 @@
     transition-property: top, bottom, width;
   }
 
-
   .sidebar-mini {
     .visible-on-sidebar-regular {
       display: none !important;
+    }
+
+    .navbar-fixed {
+      left: $sidebar-mini-width !important;
     }
 
     .visible-on-sidebar-mini {
@@ -661,7 +665,7 @@
     }
 
     .sidebar {
-      z-index: 1030;
+      z-index: 1051;
       display: block;
       width: $sidebar-mini-width;
       box-shadow: $sidebar-box-shadow;
@@ -719,6 +723,24 @@
 
       .sidebar-wrapper {
         width: $sidebar-width;
+
+        // stylelint-disable
+        > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+        .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+        .user .info > a > span,
+        > .nav li > a p {
+          @include transform-translate-x(-25px);
+          opacity: 1 !important;
+        }
+
+        > .nav li > a p,
+        > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+        .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+        .user .info > a > span{
+          @include transform-translate-x(0);
+          opacity: 1 !important;
+        }
+        // stylelint-enable
       }
 
       // stylelint-disable
@@ -736,12 +758,12 @@
 
     .main-panel{
       > .content{
-        padding-left: 130px;
+        padding-left: 110px;
       }
     }
 
     footer {
-      padding-left: 130px;
+      padding-left: 110px;
     }
   }
 

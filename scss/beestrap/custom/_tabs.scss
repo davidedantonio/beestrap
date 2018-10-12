@@ -28,6 +28,7 @@
     color: $link-color;
     background-color: transparent;
     border-color: $nav-tabs-active-colors;
+    border-width: 2px;
   }
 
   @each $key, $value in $common-colors {

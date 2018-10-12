@@ -3,21 +3,20 @@
   <head>
     {% include header.html %}
   </head>
-  <body class="sidebar-mini">
+  <body class="">
     <div class="wrapper">
-          {% include sidebar.html %}
 
-          <div class="main-panel">
-            <div class="content">
-              <h1 class="bd-title" id="content">{{ page.title | smartify }}</h1>
-              <p class="bd-lead">{{ page.description | smartify }}</p>
-              {{ content }}
-            </div>
-          </main>
+      {% include sidebar.html %}
+
+      <div class="main-panel">
+
+        {% include navbar.html %}
+
+        <div class="content">
+          {{ content }}
         </div>
       </div>
     </div>
   </body>
-
   {% include scripts.html %}
 </html>
