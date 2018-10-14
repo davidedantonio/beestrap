@@ -1,0 +1,102 @@
+@mixin form-control-placeholder($color, $opacity) {
+  .form-control::placeholder{
+    color: $color;
+    @include opacity(1);
+  }
+}
+
+@mixin input-bg($color1, $color2, $color3, $color4, $color5, $color6) {
+  @include form-control-placeholder(rgba($white, .4), 1);
+
+  .form-control {
+    color: $color2;
+    border-color: $color1;
+
+    &:focus {
+      color: $color3;
+      background-color: $color4;
+      border-color: $color3;
+
+      & + .input-group-prepend .input-group-text,
+      & + .input-group-append .input-group-text {
+        color: $color3;
+        background-color: rgba($background-black, .3);
+      }
+    }
+  }
+
+  .has-success,
+  .has-danger {
+    &::after {
+      color: $color3;
+    }
+  }
+
+  .has-danger{
+    .form-control{
+      background-color: $color4;
+    }
+  }
+
+  .input-group-prepend {
+    margin-right: 0;
+  }
+
+  .input-group-prepend .input-group-text,
+  .input-group-append .input-group-text {
+    color: $color2;
+    background-color: rgba($background-black, .2);
+    border-color: $color1;
+  }
+
+  .input-group-focus {
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text {
+      color: $color3;
+      background-color: rgba($background-black, .3);
+      border-color: $color3;
+    }
+  }
+
+  .form-group.no-border,
+  .input-group.no-border {
+    .form-control {
+      color: $color2;
+      background-color: rgba($background-black, .2);
+
+      &:focus,
+      &:active,
+      &:active {
+        color: $color3;
+        background-color: rgba($background-black, .3);
+      }
+    }
+
+    .form-control + .input-group-prepend .input-group-text,
+    .form-control + .input-group-append .input-group-text {
+      background-color: rgba($background-black, .2);
+
+      &:focus,
+      &:active,
+      &:active {
+        color: $color3;
+        background-color: rgba($background-black, .3);
+      }
+    }
+
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text {
+      color: $color2;
+      background-color: rgba($background-black, .2);
+      border: none;
+    }
+
+    &.input-group-focus {
+      .input-group-prepend .input-group-text,
+      .input-group-append .input-group-text {
+        color: $color3;
+        background-color: rgba($background-black, .3);
+      }
+    }
+  }
+}

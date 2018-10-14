@@ -19,7 +19,7 @@
   --primary: #6b94ff;
   --secondary: #f4f5f7;
   --success: #67cc9a;
-  --info: #6c94ff;
+  --info: #11cdef;
   --warning: #f9c969;
   --danger: #f06393;
   --light: #adb5bd;
@@ -1475,16 +1475,16 @@ pre code {
 .table-info,
 .table-info > th,
 .table-info > td {
-  background-color: #d6e1ff;
+  background-color: #bcf1fb;
 }
 
 .table-hover .table-info:hover {
-  background-color: #bdceff;
+  background-color: #a4ecfa;
 }
 
 .table-hover .table-info:hover > td,
 .table-hover .table-info:hover > th {
-  background-color: #bdceff;
+  background-color: #a4ecfa;
 }
 
 .table-warning,
@@ -2333,37 +2333,37 @@ fieldset:disabled a.btn {
 
 .btn-info {
   color: #fff;
-  background-color: #6c94ff;
-  border-color: #6c94ff;
+  background-color: #11cdef;
+  border-color: #11cdef;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .btn-info:hover {
   color: #fff;
-  background-color: #4678ff;
-  border-color: #396fff;
+  background-color: #0eafcc;
+  border-color: #0da5c0;
 }
 
 .btn-info:focus, .btn-info.focus {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0 rgba(108, 148, 255, 0.5);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0 rgba(17, 205, 239, 0.5);
 }
 
 .btn-info.disabled, .btn-info:disabled {
   color: #fff;
-  background-color: #6c94ff;
-  border-color: #6c94ff;
+  background-color: #11cdef;
+  border-color: #11cdef;
 }
 
 .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
 .show > .btn-info.dropdown-toggle {
   color: #fff;
-  background-color: #396fff;
-  border-color: #2c66ff;
+  background-color: #0da5c0;
+  border-color: #0c9ab4;
 }
 
 .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-info.dropdown-toggle:focus {
-  box-shadow: none, 0 0 0 0 rgba(108, 148, 255, 0.5);
+  box-shadow: none, 0 0 0 0 rgba(17, 205, 239, 0.5);
 }
 
 .btn-warning {
@@ -2749,37 +2749,37 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-info {
-  color: #6c94ff;
+  color: #11cdef;
   background-color: transparent;
   background-image: none;
-  border-color: #6c94ff;
+  border-color: #11cdef;
 }
 
 .btn-outline-info:hover {
   color: #fff;
-  background-color: #6c94ff;
-  border-color: #6c94ff;
+  background-color: #11cdef;
+  border-color: #11cdef;
 }
 
 .btn-outline-info:focus, .btn-outline-info.focus {
-  box-shadow: 0 0 0 0 rgba(108, 148, 255, 0.5);
+  box-shadow: 0 0 0 0 rgba(17, 205, 239, 0.5);
 }
 
 .btn-outline-info.disabled, .btn-outline-info:disabled {
-  color: #6c94ff;
+  color: #11cdef;
   background-color: transparent;
 }
 
 .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
 .show > .btn-outline-info.dropdown-toggle {
   color: #fff;
-  background-color: #6c94ff;
-  border-color: #6c94ff;
+  background-color: #11cdef;
+  border-color: #11cdef;
 }
 
 .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-info.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0 rgba(108, 148, 255, 0.5);
+  box-shadow: 0 0 0 0 rgba(17, 205, 239, 0.5);
 }
 
 .btn-outline-warning {
@@ -4939,13 +4939,13 @@ input[type="button"].btn-block {
 
 .badge-info {
   color: #fff;
-  background-color: #6c94ff;
+  background-color: #11cdef;
 }
 
 .badge-info[href]:hover, .badge-info[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #396fff;
+  background-color: #0da5c0;
 }
 
 .badge-warning {
@@ -5126,17 +5126,17 @@ input[type="button"].btn-block {
 }
 
 .alert-info {
-  color: #6c94ff;
-  background-color: #84a5ff;
-  border-color: #84a5ff;
+  color: #11cdef;
+  background-color: #37d5f2;
+  border-color: #37d5f2;
 }
 
 .alert-info hr {
-  border-top-color: #6b92ff;
+  border-top-color: #1fd0f0;
 }
 
 .alert-info .alert-link {
-  color: #396fff;
+  color: #0da5c0;
 }
 
 .alert-warning {
@@ -5439,19 +5439,19 @@ input[type="button"].btn-block {
 }
 
 .list-group-item-info {
-  color: #42589b;
-  background-color: #d6e1ff;
+  color: #127692;
+  background-color: #bcf1fb;
 }
 
 .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
-  color: #42589b;
-  background-color: #bdceff;
+  color: #127692;
+  background-color: #a4ecfa;
 }
 
 .list-group-item-info.list-group-item-action.active {
   color: #fff;
-  background-color: #42589b;
-  border-color: #42589b;
+  background-color: #127692;
+  border-color: #127692;
 }
 
 .list-group-item-warning {
@@ -6361,13 +6361,13 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #6c94ff !important;
+  background-color: #11cdef !important;
 }
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: #396fff !important;
+  background-color: #0da5c0 !important;
 }
 
 .bg-warning {
@@ -6511,7 +6511,7 @@ button.bg-darker:focus {
 }
 
 .border-info {
-  border-color: #6c94ff !important;
+  border-color: #11cdef !important;
 }
 
 .border-warning {
@@ -9810,11 +9810,11 @@ a.text-success:hover, a.text-success:focus {
 }
 
 .text-info {
-  color: #6c94ff !important;
+  color: #11cdef !important;
 }
 
 a.text-info:hover, a.text-info:focus {
-  color: #396fff !important;
+  color: #0da5c0 !important;
 }
 
 .text-warning {
@@ -11211,10 +11211,10 @@ fieldset[disabled] .btn-success.active {
 }
 
 .btn-info {
-  background: linear-gradient(to bottom left, #6c94ff, #3358f4, #6c94ff);
+  background: linear-gradient(to bottom left, #11cdef, #3358f4, #11cdef);
   background-position: top right;
   background-size: 210% 210%;
-  background-color: #6c94ff;
+  background-color: #11cdef;
   box-shadow: none;
   transition: all .15s ease;
   color: #fff;
@@ -11238,37 +11238,37 @@ fieldset[disabled] .btn-info:focus,
 fieldset[disabled] .btn-info.focus,
 fieldset[disabled] .btn-info:active,
 fieldset[disabled] .btn-info.active {
-  background-color: #6c94ff;
-  border-color: #6c94ff;
+  background-color: #11cdef;
+  border-color: #11cdef;
 }
 
 .btn-info.btn-simple {
-  color: #6c94ff;
+  color: #11cdef;
   background: transparent;
-  border-color: #6c94ff;
+  border-color: #11cdef;
 }
 
 .btn-info.btn-simple:hover, .btn-info.btn-simple:focus, .btn-info.btn-simple:active, .btn-info.btn-simple:not(:disabled):not(.disabled):active {
   color: #fff;
-  background: #6c94ff;
+  background: #11cdef;
   background-image: none;
-  border-color: #6c94ff;
+  border-color: #11cdef;
   box-shadow: none;
 }
 
 .btn-info.btn-simple.active {
-  border-color: #6c94ff;
+  border-color: #11cdef;
 }
 
 .btn-info.btn-simple.active:hover, .btn-info.btn-simple.active:focus, .btn-info.btn-simple.active:active, .btn-info.btn-simple.active:not(:disabled):not(.disabled):active {
   color: #fff;
-  background-image: linear-gradient(to bottom left, #6c94ff, #3358f4, #6c94ff);
-  border-color: #6c94ff;
+  background-image: linear-gradient(to bottom left, #11cdef, #3358f4, #11cdef);
+  border-color: #11cdef;
   box-shadow: none;
 }
 
 .btn-info.btn-link {
-  color: #6c94ff;
+  color: #11cdef;
 }
 
 .btn-info.btn-link:hover, .btn-info.btn-link:focus, .btn-info.btn-link:active {
@@ -11462,7 +11462,7 @@ fieldset[disabled] .btn-neutral.active {
 }
 
 .btn-neutral.btn-info {
-  color: #6c94ff;
+  color: #11cdef;
 }
 
 .btn-neutral.btn-info:hover, .btn-neutral.btn-info:focus, .btn-neutral.btn-info:active, .btn-neutral.btn-info:active:focus {
@@ -12040,7 +12040,7 @@ fieldset[disabled]
 }
 
 .nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover {
-  background: linear-gradient(to bottom left, #6c94ff, #3358f4, #6c94ff);
+  background: linear-gradient(to bottom left, #11cdef, #3358f4, #11cdef);
   background-position: top right;
   background-size: 210% 210%;
 }
@@ -12148,13 +12148,13 @@ fieldset[disabled]
 }
 
 .nav-tabs.nav-tabs-info .nav-link:hover, .nav-tabs.nav-tabs-info .nav-link:focus {
-  color: #6c94ff;
+  color: #11cdef;
 }
 
 .nav-tabs.nav-tabs-info .nav-link.active,
 .nav-tabs.nav-tabs-info .nav-item.show .nav-link {
-  color: #6c94ff;
-  border-color: transparent transparent #6c94ff;
+  color: #11cdef;
+  border-color: transparent transparent #11cdef;
 }
 
 .nav-tabs.nav-tabs-warning .nav-link:hover, .nav-tabs.nav-tabs-warning .nav-link:focus {
@@ -12184,10 +12184,6 @@ fieldset[disabled]
 
 .alert .alert-link {
   color: #fff;
-}
-
-.alert.alert-success {
-  background-color: #41bf81;
 }
 
 .alert i.fa,
@@ -12262,6 +12258,294 @@ fieldset[disabled]
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
+}
+
+.alert-outline-primary {
+  color: #6b94ff;
+  background: transparent;
+  border-color: #6b94ff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-primary hr {
+  border-top-color: #5282ff;
+}
+
+.alert-outline-primary .alert-link {
+  color: #386fff;
+}
+
+.alert-outline-primary .close {
+  color: #6b94ff;
+}
+
+.alert-outline-primary .close:hover, .alert-outline-primary .close:focus {
+  color: #9eb9ff !important;
+}
+
+.alert-outline-secondary {
+  color: #f4f5f7;
+  background: transparent;
+  border-color: #f4f5f7;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-secondary hr {
+  border-top-color: #e5e8ec;
+}
+
+.alert-outline-secondary .alert-link {
+  color: #d6dae2;
+}
+
+.alert-outline-secondary .close {
+  color: #f4f5f7;
+}
+
+.alert-outline-secondary .close:hover, .alert-outline-secondary .close:focus {
+  color: white !important;
+}
+
+.alert-outline-success {
+  color: #67cc9a;
+  background: transparent;
+  border-color: #67cc9a;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-success hr {
+  border-top-color: #54c68d;
+}
+
+.alert-outline-success .alert-link {
+  color: #41bf81;
+}
+
+.alert-outline-success .close {
+  color: #67cc9a;
+}
+
+.alert-outline-success .close:hover, .alert-outline-success .close:focus {
+  color: #8dd9b3 !important;
+}
+
+.alert-outline-info {
+  color: #11cdef;
+  background: transparent;
+  border-color: #11cdef;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-info hr {
+  border-top-color: #0fb9d8;
+}
+
+.alert-outline-info .alert-link {
+  color: #0da5c0;
+}
+
+.alert-outline-info .close {
+  color: #11cdef;
+}
+
+.alert-outline-info .close:hover, .alert-outline-info .close:focus {
+  color: #41d7f2 !important;
+}
+
+.alert-outline-warning {
+  color: #f9c969;
+  background: transparent;
+  border-color: #f9c969;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-warning hr {
+  border-top-color: #f8c050;
+}
+
+.alert-outline-warning .alert-link {
+  color: #f7b738;
+}
+
+.alert-outline-warning .close {
+  color: #f9c969;
+}
+
+.alert-outline-warning .close:hover, .alert-outline-warning .close:focus {
+  color: #fbdb9a !important;
+}
+
+.alert-outline-danger {
+  color: #f06393;
+  background: transparent;
+  border-color: #f06393;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-danger hr {
+  border-top-color: #ee4c83;
+}
+
+.alert-outline-danger .alert-link {
+  color: #ec3473;
+}
+
+.alert-outline-danger .close {
+  color: #f06393;
+}
+
+.alert-outline-danger .close:hover, .alert-outline-danger .close:focus {
+  color: #f492b3 !important;
+}
+
+.alert-outline-light {
+  color: #adb5bd;
+  background: transparent;
+  border-color: #adb5bd;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-light hr {
+  border-top-color: #9fa8b2;
+}
+
+.alert-outline-light .alert-link {
+  color: #919ca6;
+}
+
+.alert-outline-light .close {
+  color: #adb5bd;
+}
+
+.alert-outline-light .close:hover, .alert-outline-light .close:focus {
+  color: #c9cfd4 !important;
+}
+
+.alert-outline-dark {
+  color: #212529;
+  background: transparent;
+  border-color: #212529;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-dark hr {
+  border-top-color: #16181b;
+}
+
+.alert-outline-dark .alert-link {
+  color: #0a0c0d;
+}
+
+.alert-outline-dark .close {
+  color: #212529;
+}
+
+.alert-outline-dark .close:hover, .alert-outline-dark .close:focus {
+  color: #383f45 !important;
+}
+
+.alert-outline-default {
+  color: #344675;
+  background: transparent;
+  border-color: #344675;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-default hr {
+  border-top-color: #2c3b63;
+}
+
+.alert-outline-default .alert-link {
+  color: #243152;
+}
+
+.alert-outline-default .close {
+  color: #344675;
+}
+
+.alert-outline-default .close:hover, .alert-outline-default .close:focus {
+  color: #445b98 !important;
+}
+
+.alert-outline-white {
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-white hr {
+  border-top-color: #f2f2f2;
+}
+
+.alert-outline-white .alert-link {
+  color: #e6e6e6;
+}
+
+.alert-outline-white .close {
+  color: #fff;
+}
+
+.alert-outline-white .close:hover, .alert-outline-white .close:focus {
+  color: white !important;
+}
+
+.alert-outline-neutral {
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-neutral hr {
+  border-top-color: #f2f2f2;
+}
+
+.alert-outline-neutral .alert-link {
+  color: #e6e6e6;
+}
+
+.alert-outline-neutral .close {
+  color: #fff;
+}
+
+.alert-outline-neutral .close:hover, .alert-outline-neutral .close:focus {
+  color: white !important;
+}
+
+.alert-outline-darker {
+  color: black;
+  background: transparent;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.alert-outline-darker hr {
+  border-top-color: black;
+}
+
+.alert-outline-darker .alert-link {
+  color: black;
+}
+
+.alert-outline-darker .close {
+  color: black;
+}
+
+.alert-outline-darker .close:hover, .alert-outline-darker .close:focus {
+  color: #1a1a1a !important;
 }
 
 .wrapper {
@@ -12658,15 +12942,26 @@ fieldset[disabled]
   border-bottom-color: #344675;
 }
 
+.sidebar[data="black"],
+.off-canvas-sidebar[data="black"] {
+  background: #1d253b;
+  background: linear-gradient(0deg, #1d253b 0%, #14172e 100%);
+}
+
+.sidebar[data="black"]::before,
+.off-canvas-sidebar[data="black"]::before {
+  border-bottom-color: #14172e;
+}
+
 .sidebar[data="blue"],
 .off-canvas-sidebar[data="blue"] {
   background: #3358f4;
-  background: linear-gradient(0deg, #3358f4 0%, #6c94ff 100%);
+  background: linear-gradient(0deg, #3358f4 0%, #11cdef 100%);
 }
 
 .sidebar[data="blue"]::before,
 .off-canvas-sidebar[data="blue"]::before {
-  border-bottom-color: #6c94ff;
+  border-bottom-color: #11cdef;
 }
 
 .sidebar[data="green"],
@@ -12938,11 +13233,11 @@ fieldset[disabled]
     opacity: 1;
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
-  .wrapper {
-    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  }
   .main-panel {
     width: 100%;
+  }
+  .main-panel .wrapper {
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
   .main-panel .content {
     padding-left: 30px;
@@ -12959,9 +13254,6 @@ fieldset[disabled]
   }
   .sidebar-mini .visible-on-sidebar-regular {
     display: none !important;
-  }
-  .sidebar-mini .navbar-fixed {
-    left: 80px !important;
   }
   .sidebar-mini .visible-on-sidebar-mini {
     display: inline-block !important;
@@ -13106,6 +13398,12 @@ fieldset[disabled]
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
+  .main-panel > .content {
+    padding-left: 30px !important;
+  }
+  footer {
+    padding-left: 30px !important;
+  }
   .nav-open .main-panel {
     right: 0;
     -webkit-transform: translate3d(260px, 0, 0);
@@ -13166,9 +13464,6 @@ fieldset[disabled]
     opacity: 1;
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
-  .main-panel .content {
-    padding-left: 30px !important;
-  }
   .sidebar-mini .sidebar .logo a.logo-normal {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -13189,8 +13484,7 @@ fieldset[disabled]
 
 .navbar {
   z-index: 1050;
-  width: 100%;
-  padding: .1rem .9375rem;
+  width: auto;
   background: #1a1e34;
 }
 
@@ -13224,8 +13518,8 @@ fieldset[disabled]
   position: fixed;
   top: 0;
   right: 0;
-  left: 260px;
   z-index: 1050;
+  width: auto;
 }
 
 .navbar.navbar-transparent {
@@ -13283,7 +13577,7 @@ fieldset[disabled]
 }
 
 .navbar.bg-info {
-  background-color: #6c94ff !important;
+  background-color: #11cdef !important;
 }
 
 .navbar.bg-success {
@@ -13680,7 +13974,7 @@ fieldset[disabled]
     }
   }
   .navbar-nav .nav-link i.fa,
-  .navbar-nav .nav-link i.tim-icons {
+  .navbar-nav .nav-link i.bee-icons {
     opacity: .5;
   }
 }
@@ -13695,6 +13989,12 @@ fieldset[disabled]
   .navbar-nav .nav-link.profile-photo {
     padding: 0;
     margin: 7px 0.7rem;
+  }
+  .sidebar-mini .navbar {
+    left: 80px;
+  }
+  .navbar {
+    left: calc(260px - 30px);
   }
   .navbar .caret {
     position: absolute;
@@ -13951,6 +14251,1401 @@ fieldset[disabled]
   }
   .navbar-minimize-fixed {
     display: none;
+  }
+}
+
+.dropdown-menu {
+  border: 0;
+  border-radius: 0.1428rem;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+  transition: all 150ms linear;
+}
+
+.dropdown-menu.dropdown-menu-right {
+  right: 0 !important;
+  left: auto !important;
+}
+
+.dropdown-menu.dropdown-menu-right::before, .dropdown-menu.dropdown-menu-right::after {
+  right: 10px;
+  left: auto;
+}
+
+.dropdown-menu.dropdown-black {
+  background: linear-gradient(to bottom, #14172e 0%, #1d253b 100%);
+  border: 1px solid #344675;
+}
+
+.dropdown-menu.dropdown-black .dropdown-item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dropdown-menu.dropdown-black .dropdown-divider {
+  border-color: #344675;
+}
+
+.dropdown-menu.dropdown-black::before {
+  z-index: 2;
+  color: #14172e;
+}
+
+.dropdown-menu.dropdown-black::after {
+  position: absolute;
+  top: -6px;
+  right: auto;
+  left: 10px;
+  z-index: 1;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  color: #344675;
+  vertical-align: middle;
+  content: "";
+  border-right: .4em solid transparent;
+  border-bottom: .4em solid;
+  border-left: .4em solid transparent;
+}
+
+.dropup .dropdown-menu.dropdown-black::after {
+  z-index: 2;
+  color: #1d253b;
+}
+
+.dropup .dropdown-menu.dropdown-black::before {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: -6px;
+  left: 10px;
+  z-index: 1;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  color: #555;
+  vertical-align: middle;
+  content: "";
+  border-top: .4em solid;
+  border-right: .4em solid transparent;
+  border-bottom: none;
+  border-left: .4em solid transparent;
+}
+
+.dropdown-menu i {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+}
+
+.dropdown-menu .bee-icons {
+  position: relative;
+  top: 4px;
+  margin-top: -5px;
+  margin-right: 10px;
+  font-size: 18px;
+  opacity: .5;
+}
+
+.dropdown-menu .dropdown-item.active, .dropdown-menu .dropdown-item:active {
+  color: inherit;
+}
+
+.dropup .dropdown-menu::before {
+  display: none;
+}
+
+.dropup .dropdown-menu::after {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: -5px;
+  left: 10px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  color: #fff;
+  vertical-align: middle;
+  content: "";
+  border-top: .4em solid;
+  border-right: .4em solid transparent;
+  border-bottom: none;
+  border-left: .4em solid transparent;
+}
+
+.dropup .dropdown-menu.dropdown-menu-right::after, .dropup .dropdown-menu.dropdown-menu-right::before {
+  right: 10px;
+  left: auto;
+}
+
+.dropdown-menu::before {
+  position: absolute;
+  top: -5px;
+  right: auto;
+  left: 10px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  color: #fff;
+  vertical-align: middle;
+  content: "";
+  border-right: .4em solid transparent;
+  border-bottom: .4em solid;
+  border-left: .4em solid transparent;
+}
+
+.dropdown-menu .dropdown-item,
+.bootstrap-select .dropdown-menu.inner li a {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  transition: all 150ms linear;
+}
+
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus,
+.bootstrap-select .dropdown-menu.inner li a:hover,
+.bootstrap-select .dropdown-menu.inner li a:focus {
+  background-color: rgba(222, 222, 222, 0.3);
+}
+
+.dropdown-menu .dropdown-item.disabled, .dropdown-menu .dropdown-item:disabled,
+.bootstrap-select .dropdown-menu.inner li a.disabled,
+.bootstrap-select .dropdown-menu.inner li a:disabled {
+  color: rgba(182, 182, 182, 0.6);
+}
+
+.dropdown-menu .dropdown-item.disabled:hover, .dropdown-menu .dropdown-item.disabled:focus, .dropdown-menu .dropdown-item:disabled:hover, .dropdown-menu .dropdown-item:disabled:focus,
+.bootstrap-select .dropdown-menu.inner li a.disabled:hover,
+.bootstrap-select .dropdown-menu.inner li a.disabled:focus,
+.bootstrap-select .dropdown-menu.inner li a:disabled:hover,
+.bootstrap-select .dropdown-menu.inner li a:disabled:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.dropdown-menu .dropdown-divider {
+  background-color: rgba(222, 222, 222, 0.5);
+}
+
+.dropdown-menu .dropdown-header:not([href]):not([tabindex]) {
+  font-size: 0.62475rem;
+  font-weight: 600;
+  color: rgba(182, 182, 182, 0.6);
+  text-transform: uppercase;
+}
+
+.dropdown-menu.dropdown-primary {
+  background-color: #5c89ff;
+}
+
+.dropdown-menu.dropdown-primary::before {
+  color: #5c89ff;
+}
+
+.dropdown-menu.dropdown-primary .dropdown-header:not([href]):not([tabindex]) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-menu.dropdown-primary .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu.dropdown-primary .dropdown-item:hover, .dropdown-menu.dropdown-primary .dropdown-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-primary .dropdown-divider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-info {
+  background-color: #0fc1e2;
+}
+
+.dropdown-menu.dropdown-info::before {
+  color: #0fc1e2;
+}
+
+.dropdown-menu.dropdown-info .dropdown-header:not([href]):not([tabindex]) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-menu.dropdown-info .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu.dropdown-info .dropdown-item:hover, .dropdown-menu.dropdown-info .dropdown-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-info .dropdown-divider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-danger {
+  background-color: #ef5589;
+}
+
+.dropdown-menu.dropdown-danger::before {
+  color: #ef5589;
+}
+
+.dropdown-menu.dropdown-danger .dropdown-header:not([href]):not([tabindex]) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-menu.dropdown-danger .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu.dropdown-danger .dropdown-item:hover, .dropdown-menu.dropdown-danger .dropdown-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-danger .dropdown-divider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-success {
+  background-color: #5cc892;
+}
+
+.dropdown-menu.dropdown-success::before {
+  color: #5cc892;
+}
+
+.dropdown-menu.dropdown-success .dropdown-header:not([href]):not([tabindex]) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-menu.dropdown-success .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu.dropdown-success .dropdown-item:hover, .dropdown-menu.dropdown-success .dropdown-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-success .dropdown-divider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-warning {
+  background-color: #f8c45a;
+}
+
+.dropdown-menu.dropdown-warning::before {
+  color: #f8c45a;
+}
+
+.dropdown-menu.dropdown-warning .dropdown-header:not([href]):not([tabindex]) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-menu.dropdown-warning .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu.dropdown-warning .dropdown-item:hover, .dropdown-menu.dropdown-warning .dropdown-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu.dropdown-warning .dropdown-divider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown .dropdown-menu,
+.dropup:not(.bootstrap-select) .dropdown-menu,
+.bootstrap-select .dropdown-menu:not(.inner), .dropdown-menu.bootstrap-datetimepicker-widget.bottom {
+  top: 100% !important;
+  display: block;
+  visibility: hidden;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transform: translate3d(0, -20px, 0) !important;
+  transform: translate3d(0, -20px, 0) !important;
+}
+
+.dropdown-menu.bootstrap-datetimepicker-widget.top {
+  display: block;
+  visibility: hidden;
+  -webkit-transform: translate3d(0, -20px, 0) !important;
+  transform: translate3d(0, -20px, 0) !important;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.dropdown-menu.bootstrap-datetimepicker-widget.top, .dropdown-menu.bootstrap-datetimepicker-widget.bottom {
+  -webkit-transform: translate3d(0, -20px, 0) !important;
+  transform: translate3d(0, -20px, 0) !important;
+}
+
+.bootstrap-select.dropup .dropdown-menu:not(.inner) {
+  -webkit-transform: translate3d(0, 25px, 0) !important;
+  transform: translate3d(0, 25px, 0) !important;
+}
+
+.dropup:not(.bootstrap-select) .dropdown-menu {
+  -webkit-transform: translate3d(0, 20px, 0) !important;
+  transform: translate3d(0, 20px, 0) !important;
+  top: auto !important;
+  bottom: 100%;
+}
+
+.dropdown.show .dropdown-menu,
+.bootstrap-select.show .dropdown-menu:not(.inner), .dropdown-menu.bootstrap-datetimepicker-widget.top.open, .dropdown-menu.bootstrap-datetimepicker-widget.bottom.open,
+.dropup.show:not(.bootstrap-select) .dropdown-menu,
+.navbar .dropdown.show .dropdown-menu {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 1px, 0) !important;
+  transform: translate3d(0, 1px, 0) !important;
+}
+
+.dropdown-menu.bootstrap-datetimepicker-widget.top.open, .dropdown-menu.bootstrap-datetimepicker-widget.bottom.open {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.dropup.show:not(.bootstrap-select) .dropdown-menu {
+  -webkit-transform: translate3d(0, -2px, 0) !important;
+  transform: translate3d(0, -2px, 0) !important;
+}
+
+.dropdown-menu.dropdown-navbar {
+  left: -105px;
+}
+
+.dropdown-menu.dropdown-navbar::before, .dropdown-menu.dropdown-navbar::after {
+  right: 17px;
+  left: auto;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn.dropdown-toggle[data-toggle="dropdown"] {
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.btn.dropdown-toggle[data-toggle="dropdown"]::after {
+  margin-left: 5px;
+  content: "";
+}
+
+.btn span.bs-caret {
+  display: none;
+}
+
+.btn.btn-link.dropdown-toggle {
+  height: 22px;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.dropdown-toggle::after {
+  content: unset;
+}
+
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:not(:disabled):not(.disabled):active:focus,
+.show > .btn.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.dropdown-menu-sm {
+  min-width: 100px;
+  border: 0.2585rem;
+}
+
+.dropdown-menu-lg {
+  min-width: 260px;
+  border-radius: 0.2585rem;
+}
+
+.dropdown-menu-xl {
+  min-width: 450px;
+  border-radius: 0.2585rem;
+}
+
+@media (max-width: 991.98px) {
+  .button-dropdown {
+    display: none;
+  }
+  .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu .dropdown-item {
+    color: #9a9a9a;
+  }
+}
+
+.modal-content {
+  border: 0;
+}
+
+.modal-content .modal-header {
+  border-bottom: none;
+}
+
+.modal-content .modal-header button {
+  position: absolute;
+  top: 24px;
+  right: 27px;
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+  outline: 0;
+}
+
+.modal-content .modal-header .title {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #14172e;
+}
+
+.modal-content .modal-header .modal-title {
+  color: #14172e;
+}
+
+.modal-content .modal-header i.bee-icons {
+  font-size: 16px;
+}
+
+.modal-content .modal-body {
+  line-height: 1.9;
+}
+
+.modal-content .modal-body p {
+  color: #14172e;
+}
+
+.modal-content .modal-footer {
+  justify-content: space-between;
+  border-top: 0;
+}
+
+.modal-content .modal-footer button {
+  width: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0;
+}
+
+.modal-content .modal-footer button.pull-left {
+  position: relative;
+  left: -5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.modal-content .modal-body + .modal-footer {
+  padding-top: 0;
+}
+
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  z-index: 1051;
+}
+
+.modal .modal-login {
+  max-width: 320px;
+}
+
+.modal .modal-login .card-login .logo-container {
+  width: 65px;
+  margin-top: 27px;
+  margin-bottom: 38px;
+}
+
+.modal.modal-mini p {
+  text-align: center;
+}
+
+.modal.modal-mini .modal-dialog {
+  max-width: 255px;
+  margin: 0 auto;
+}
+
+.modal.modal-mini.show .modal-dialog {
+  -webkit-transform: translate(0, 30%);
+  transform: translate(0, 30%);
+}
+
+.modal.modal-mini .modal-footer button {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.modal.modal-mini .modal-footer button:first-child {
+  opacity: .5;
+}
+
+.modal .modal-profile {
+  width: 70px;
+  height: 70px;
+  line-height: 5.7;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal-profile i {
+  margin-top: -10px;
+  font-size: 21px;
+  color: #6b94ff;
+}
+
+.modal .modal-profile[class*="modal-profile-"] i {
+  color: #fff;
+}
+
+.modal .modal-profile.modal-profile-primary {
+  background-color: #6b94ff;
+}
+
+.modal .modal-profile.modal-profile-danger {
+  background-color: #f06393;
+}
+
+.modal .modal-profile.modal-profile-warning {
+  background-color: #f9c969;
+}
+
+.modal .modal-profile.modal-profile-success {
+  background-color: #67cc9a;
+}
+
+.modal .modal-profile.modal-profile-info {
+  background-color: #11cdef;
+}
+
+.modal.modal-default .modal-content {
+  color: #14172e;
+  background-color: #fff;
+}
+
+.modal.modal-default .modal-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal.modal-default .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-default .form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-default .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-default .form-control {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-default .form-control:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.modal.modal-default .form-control:focus + .input-group-prepend .input-group-text,
+.modal.modal-default .form-control:focus + .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-default .has-success::after,
+.modal.modal-default .has-danger::after {
+  color: #fff;
+}
+
+.modal.modal-default .has-danger .form-control {
+  background-color: transparent;
+}
+
+.modal.modal-default .input-group-prepend {
+  margin-right: 0;
+}
+
+.modal.modal-default .input-group-prepend .input-group-text,
+.modal.modal-default .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-default .input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-default .input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+  border-color: #fff;
+}
+
+.modal.modal-default .form-group.no-border .form-control,
+.modal.modal-default .input-group.no-border .form-control {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-default .form-group.no-border .form-control:focus, .modal.modal-default .form-group.no-border .form-control:active, .modal.modal-default .form-group.no-border .form-control:active,
+.modal.modal-default .input-group.no-border .form-control:focus,
+.modal.modal-default .input-group.no-border .form-control:active,
+.modal.modal-default .input-group.no-border .form-control:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-default .form-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-default .form-group.no-border .form-control + .input-group-append .input-group-text,
+.modal.modal-default .input-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-default .input-group.no-border .form-control + .input-group-append .input-group-text {
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-default .form-group.no-border .form-control + .input-group-prepend .input-group-text:focus, .modal.modal-default .form-group.no-border .form-control + .input-group-prepend .input-group-text:active, .modal.modal-default .form-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-default .form-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-default .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-default .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-default .input-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
+.modal.modal-default .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-default .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-default .input-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-default .input-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-default .input-group.no-border .form-control + .input-group-append .input-group-text:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-default .form-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-default .form-group.no-border .input-group-append .input-group-text,
+.modal.modal-default .input-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-default .input-group.no-border .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border: none;
+}
+
+.modal.modal-default .form-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-default .form-group.no-border.input-group-focus .input-group-append .input-group-text,
+.modal.modal-default .input-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-default .input-group.no-border.input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-primary .modal-content {
+  color: #fff;
+  background-color: #6b94ff;
+}
+
+.modal.modal-primary .modal-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal.modal-primary .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-primary .form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-primary .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-primary .form-control {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-primary .form-control:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.modal.modal-primary .form-control:focus + .input-group-prepend .input-group-text,
+.modal.modal-primary .form-control:focus + .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-primary .has-success::after,
+.modal.modal-primary .has-danger::after {
+  color: #fff;
+}
+
+.modal.modal-primary .has-danger .form-control {
+  background-color: transparent;
+}
+
+.modal.modal-primary .input-group-prepend {
+  margin-right: 0;
+}
+
+.modal.modal-primary .input-group-prepend .input-group-text,
+.modal.modal-primary .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-primary .input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-primary .input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+  border-color: #fff;
+}
+
+.modal.modal-primary .form-group.no-border .form-control,
+.modal.modal-primary .input-group.no-border .form-control {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-primary .form-group.no-border .form-control:focus, .modal.modal-primary .form-group.no-border .form-control:active, .modal.modal-primary .form-group.no-border .form-control:active,
+.modal.modal-primary .input-group.no-border .form-control:focus,
+.modal.modal-primary .input-group.no-border .form-control:active,
+.modal.modal-primary .input-group.no-border .form-control:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-primary .form-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-primary .form-group.no-border .form-control + .input-group-append .input-group-text,
+.modal.modal-primary .input-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-primary .input-group.no-border .form-control + .input-group-append .input-group-text {
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-primary .form-group.no-border .form-control + .input-group-prepend .input-group-text:focus, .modal.modal-primary .form-group.no-border .form-control + .input-group-prepend .input-group-text:active, .modal.modal-primary .form-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-primary .form-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-primary .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-primary .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-primary .input-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
+.modal.modal-primary .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-primary .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-primary .input-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-primary .input-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-primary .input-group.no-border .form-control + .input-group-append .input-group-text:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-primary .form-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-primary .form-group.no-border .input-group-append .input-group-text,
+.modal.modal-primary .input-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-primary .input-group.no-border .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border: none;
+}
+
+.modal.modal-primary .form-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-primary .form-group.no-border.input-group-focus .input-group-append .input-group-text,
+.modal.modal-primary .input-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-primary .input-group.no-border.input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-danger .modal-content {
+  color: #fff;
+  background-color: #f06393;
+}
+
+.modal.modal-danger .modal-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal.modal-danger .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-danger .form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-danger .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-danger .form-control {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-danger .form-control:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.modal.modal-danger .form-control:focus + .input-group-prepend .input-group-text,
+.modal.modal-danger .form-control:focus + .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-danger .has-success::after,
+.modal.modal-danger .has-danger::after {
+  color: #fff;
+}
+
+.modal.modal-danger .has-danger .form-control {
+  background-color: transparent;
+}
+
+.modal.modal-danger .input-group-prepend {
+  margin-right: 0;
+}
+
+.modal.modal-danger .input-group-prepend .input-group-text,
+.modal.modal-danger .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-danger .input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-danger .input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+  border-color: #fff;
+}
+
+.modal.modal-danger .form-group.no-border .form-control,
+.modal.modal-danger .input-group.no-border .form-control {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-danger .form-group.no-border .form-control:focus, .modal.modal-danger .form-group.no-border .form-control:active, .modal.modal-danger .form-group.no-border .form-control:active,
+.modal.modal-danger .input-group.no-border .form-control:focus,
+.modal.modal-danger .input-group.no-border .form-control:active,
+.modal.modal-danger .input-group.no-border .form-control:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-danger .form-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-danger .form-group.no-border .form-control + .input-group-append .input-group-text,
+.modal.modal-danger .input-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-danger .input-group.no-border .form-control + .input-group-append .input-group-text {
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-danger .form-group.no-border .form-control + .input-group-prepend .input-group-text:focus, .modal.modal-danger .form-group.no-border .form-control + .input-group-prepend .input-group-text:active, .modal.modal-danger .form-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-danger .form-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-danger .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-danger .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-danger .input-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
+.modal.modal-danger .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-danger .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-danger .input-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-danger .input-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-danger .input-group.no-border .form-control + .input-group-append .input-group-text:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-danger .form-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-danger .form-group.no-border .input-group-append .input-group-text,
+.modal.modal-danger .input-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-danger .input-group.no-border .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border: none;
+}
+
+.modal.modal-danger .form-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-danger .form-group.no-border.input-group-focus .input-group-append .input-group-text,
+.modal.modal-danger .input-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-danger .input-group.no-border.input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-warning .modal-content {
+  color: #fff;
+  background-color: #f9c969;
+}
+
+.modal.modal-warning .modal-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal.modal-warning .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-warning .form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-warning .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-warning .form-control {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-warning .form-control:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.modal.modal-warning .form-control:focus + .input-group-prepend .input-group-text,
+.modal.modal-warning .form-control:focus + .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-warning .has-success::after,
+.modal.modal-warning .has-danger::after {
+  color: #fff;
+}
+
+.modal.modal-warning .has-danger .form-control {
+  background-color: transparent;
+}
+
+.modal.modal-warning .input-group-prepend {
+  margin-right: 0;
+}
+
+.modal.modal-warning .input-group-prepend .input-group-text,
+.modal.modal-warning .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-warning .input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-warning .input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+  border-color: #fff;
+}
+
+.modal.modal-warning .form-group.no-border .form-control,
+.modal.modal-warning .input-group.no-border .form-control {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-warning .form-group.no-border .form-control:focus, .modal.modal-warning .form-group.no-border .form-control:active, .modal.modal-warning .form-group.no-border .form-control:active,
+.modal.modal-warning .input-group.no-border .form-control:focus,
+.modal.modal-warning .input-group.no-border .form-control:active,
+.modal.modal-warning .input-group.no-border .form-control:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-warning .form-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-warning .form-group.no-border .form-control + .input-group-append .input-group-text,
+.modal.modal-warning .input-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-warning .input-group.no-border .form-control + .input-group-append .input-group-text {
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-warning .form-group.no-border .form-control + .input-group-prepend .input-group-text:focus, .modal.modal-warning .form-group.no-border .form-control + .input-group-prepend .input-group-text:active, .modal.modal-warning .form-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-warning .form-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-warning .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-warning .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-warning .input-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
+.modal.modal-warning .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-warning .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-warning .input-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-warning .input-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-warning .input-group.no-border .form-control + .input-group-append .input-group-text:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-warning .form-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-warning .form-group.no-border .input-group-append .input-group-text,
+.modal.modal-warning .input-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-warning .input-group.no-border .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border: none;
+}
+
+.modal.modal-warning .form-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-warning .form-group.no-border.input-group-focus .input-group-append .input-group-text,
+.modal.modal-warning .input-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-warning .input-group.no-border.input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-success .modal-content {
+  color: #fff;
+  background-color: #67cc9a;
+}
+
+.modal.modal-success .modal-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal.modal-success .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-success .form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-success .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-success .form-control {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-success .form-control:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.modal.modal-success .form-control:focus + .input-group-prepend .input-group-text,
+.modal.modal-success .form-control:focus + .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-success .has-success::after,
+.modal.modal-success .has-danger::after {
+  color: #fff;
+}
+
+.modal.modal-success .has-danger .form-control {
+  background-color: transparent;
+}
+
+.modal.modal-success .input-group-prepend {
+  margin-right: 0;
+}
+
+.modal.modal-success .input-group-prepend .input-group-text,
+.modal.modal-success .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-success .input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-success .input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+  border-color: #fff;
+}
+
+.modal.modal-success .form-group.no-border .form-control,
+.modal.modal-success .input-group.no-border .form-control {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-success .form-group.no-border .form-control:focus, .modal.modal-success .form-group.no-border .form-control:active, .modal.modal-success .form-group.no-border .form-control:active,
+.modal.modal-success .input-group.no-border .form-control:focus,
+.modal.modal-success .input-group.no-border .form-control:active,
+.modal.modal-success .input-group.no-border .form-control:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-success .form-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-success .form-group.no-border .form-control + .input-group-append .input-group-text,
+.modal.modal-success .input-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-success .input-group.no-border .form-control + .input-group-append .input-group-text {
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-success .form-group.no-border .form-control + .input-group-prepend .input-group-text:focus, .modal.modal-success .form-group.no-border .form-control + .input-group-prepend .input-group-text:active, .modal.modal-success .form-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-success .form-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-success .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-success .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-success .input-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
+.modal.modal-success .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-success .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-success .input-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-success .input-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-success .input-group.no-border .form-control + .input-group-append .input-group-text:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-success .form-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-success .form-group.no-border .input-group-append .input-group-text,
+.modal.modal-success .input-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-success .input-group.no-border .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border: none;
+}
+
+.modal.modal-success .form-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-success .form-group.no-border.input-group-focus .input-group-append .input-group-text,
+.modal.modal-success .input-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-success .input-group.no-border.input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-info .modal-content {
+  color: #fff;
+  background-color: #11cdef;
+}
+
+.modal.modal-info .modal-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal.modal-info .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-info .form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-info .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.modal.modal-info .form-control {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-info .form-control:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.modal.modal-info .form-control:focus + .input-group-prepend .input-group-text,
+.modal.modal-info .form-control:focus + .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-info .has-success::after,
+.modal.modal-info .has-danger::after {
+  color: #fff;
+}
+
+.modal.modal-info .has-danger .form-control {
+  background-color: transparent;
+}
+
+.modal.modal-info .input-group-prepend {
+  margin-right: 0;
+}
+
+.modal.modal-info .input-group-prepend .input-group-text,
+.modal.modal-info .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal.modal-info .input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-info .input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+  border-color: #fff;
+}
+
+.modal.modal-info .form-group.no-border .form-control,
+.modal.modal-info .input-group.no-border .form-control {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-info .form-group.no-border .form-control:focus, .modal.modal-info .form-group.no-border .form-control:active, .modal.modal-info .form-group.no-border .form-control:active,
+.modal.modal-info .input-group.no-border .form-control:focus,
+.modal.modal-info .input-group.no-border .form-control:active,
+.modal.modal-info .input-group.no-border .form-control:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-info .form-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-info .form-group.no-border .form-control + .input-group-append .input-group-text,
+.modal.modal-info .input-group.no-border .form-control + .input-group-prepend .input-group-text,
+.modal.modal-info .input-group.no-border .form-control + .input-group-append .input-group-text {
+  background-color: rgba(20, 23, 46, 0.2);
+}
+
+.modal.modal-info .form-group.no-border .form-control + .input-group-prepend .input-group-text:focus, .modal.modal-info .form-group.no-border .form-control + .input-group-prepend .input-group-text:active, .modal.modal-info .form-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-info .form-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-info .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-info .form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-info .input-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
+.modal.modal-info .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-info .input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.modal.modal-info .input-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.modal.modal-info .input-group.no-border .form-control + .input-group-append .input-group-text:active,
+.modal.modal-info .input-group.no-border .form-control + .input-group-append .input-group-text:active {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal.modal-info .form-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-info .form-group.no-border .input-group-append .input-group-text,
+.modal.modal-info .input-group.no-border .input-group-prepend .input-group-text,
+.modal.modal-info .input-group.no-border .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.2);
+  border: none;
+}
+
+.modal.modal-info .form-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-info .form-group.no-border.input-group-focus .input-group-append .input-group-text,
+.modal.modal-info .input-group.no-border.input-group-focus .input-group-prepend .input-group-text,
+.modal.modal-info .input-group.no-border.input-group-focus .input-group-append .input-group-text {
+  color: #fff;
+  background-color: rgba(20, 23, 46, 0.3);
+}
+
+.modal .modal-header .close {
+  text-shadow: none;
+}
+
+.modal .modal-header .close:hover, .modal .modal-header .close:focus {
+  opacity: 1;
+}
+
+.modal.modal-black .modal-content {
+  color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(to bottom, #14172e 0%, #1d253b 100%);
+}
+
+.modal.modal-black .modal-content .modal-header .modal-title,
+.modal.modal-black .modal-content .modal-header .title {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.modal.modal-black .modal-content .modal-body p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal.modal-black h1,
+.modal.modal-black h2,
+.modal.modal-black h3,
+.modal.modal-black h4,
+.modal.modal-black h5,
+.modal.modal-black h6,
+.modal.modal-black p {
+  color: #fff;
+}
+
+.modal-search .modal-dialog {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.modal-search .modal-dialog input {
+  font-size: 17px;
+  font-weight: 100;
+  border: none;
+}
+
+.modal-search .modal-dialog span {
+  font-size: 35px;
+  color: #b7b7b7;
+}
+
+.modal-search .modal-content .modal-header {
+  padding: 24px;
+}
+
+.modal-search .modal-header .close {
+  top: 30px !important;
+  color: #555;
+}
+
+.modal-search .modal-footer {
+  margin: 0 25px 20px;
+  border-top: 2px solid #f9f9f9;
+}
+
+@media (max-width: 575.98px) {
+  .modal.show .modal-dialog {
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+  .modal.show .modal-dialog.modal-notice {
+    -webkit-transform: translateY(3%);
+    transform: translateY(3%);
   }
 }
 /*# sourceMappingURL=beestrap.css.map */

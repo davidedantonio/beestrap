@@ -1,5 +1,6 @@
 - title: Components
   icon: view_module
   pages:
+    - title: Alerts
     - title: Buttons
     - title: Panels

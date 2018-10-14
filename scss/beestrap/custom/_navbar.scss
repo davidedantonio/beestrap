@@ -1,7 +1,6 @@
 .navbar {
   z-index: 1050;
-  width: 100%;
-  padding: .1rem .9375rem;
+  width: auto;
   background: $navbar-color;
 
   .photo {
@@ -34,8 +33,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    left: $sidebar-width;
     z-index: 1050;
+    width: auto;
   }
 
   &.navbar-transparent {
@@ -366,7 +365,7 @@
   .navbar-nav{
     .nav-link{
       i.fa,
-      i.tim-icons{
+      i.#{$prefix}-icons{
         opacity: .5;
       }
     }
@@ -391,7 +390,14 @@
     }
   }
 
+  .sidebar-mini {
+    .navbar {
+      left: $sidebar-mini-width;
+    }
+  }
+
   .navbar {
+    left: calc(#{$sidebar-width} - 30px);
 
     .caret {
       position: absolute;
