@@ -43,7 +43,7 @@
     border: 0;
 
     &:not([data-background-color]) {
-      background-color: $card-black-header-background;
+      background-color: $card-black-header-background !important;
     }
 
     .card-title {
