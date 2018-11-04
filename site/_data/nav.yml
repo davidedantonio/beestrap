@@ -1,5 +1,5 @@
 - title: Components
-  icon: view_module
+  icon: fas fa-boxes
   pages:
     - title: Alerts
     - title: Buttons

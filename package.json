@@ -21,7 +21,6 @@
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "css-copy": "shx mkdir -p site/docs/1.0/dist/ && shx cp -r dist/css/ site/docs/1.0/dist/",
     "js": "npm-run-all --parallel js-copy",
-    "fonts-copy": "shx mkdir -p site/docs/1.0/dist/fonts && shx cp -r node_modules/material-design-icons/iconfont/*.woff* site/docs/1.0/dist/fonts",
     "docs-serve": "bundle exec jekyll serve",
     "watch-css": "nodemon --ignore js/ --ignore dist/ -e scss -x \"npm run css\"",
     "build": "npm-run-all css-main js-compile js-minify js-copy"
