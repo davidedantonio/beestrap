@@ -1,0 +1,147 @@
+/* Form controls */
+@include form-control-placeholder(#6c757c, 1);
+
+.form-control{
+  font-size: $font-size-sm;
+  border-color: lighten($black, 5%);
+  border-radius: $border-radius-lg;
+
+  @include transition-input-focus-color();
+
+
+  &:focus{
+    background-color: $input-bg;
+    border-color: $primary;
+
+    @include box-shadow(none);
+
+    & + .input-group-append .input-group-text,
+    & ~ .input-group-append .input-group-text,
+    & + .input-group-prepend .input-group-text,
+    & ~ .input-group-prepend .input-group-text {
+      background-color: $transparent-bg;
+      border: 1px solid $primary;
+      border-left: none;
+    }
+  }
+
+  .has-success &,
+  .has-error &,
+  .has-success &:focus,
+  .has-error &:focus {
+    @include box-shadow(none);
+  }
+
+  .has-danger &,
+  .has-success & {
+    &.form-control-success,
+    &.form-control-danger {
+      background-image: none;
+    }
+  }
+
+  & + .form-control-feedback {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -7px;
+    vertical-align: middle;
+    border-radius: $border-radius-lg;
+  }
+
+  .open & {
+    border-bottom-color: $transparent-bg;
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+  }
+
+  & + .input-group-append .input-group-text,
+  & + .input-group-prepend .input-group-text {
+    background-color: $white;
+  }
+}
+
+.has-success .input-group-append .input-group-text,
+.has-success .input-group-prepend .input-group-text,
+.has-success .form-control {
+  border-color: lighten($black, 5%);
+}
+
+.has-success .form-control:focus,
+.has-success.input-group-focus .input-group-append .input-group-text,
+.has-success.input-group-focus .input-group-prepend .input-group-text {
+  border-color: darken($success, 10%);
+}
+
+.has-danger .form-control,
+.has-danger .input-group-append .input-group-text,
+.has-danger .input-group-prepend .input-group-text,
+.has-danger.input-group-focus .input-group-prepend .input-group-text,
+.has-danger.input-group-focus .input-group-append .input-group-text {
+  color: $danger-states;
+  background-color: rgba(222, 222, 222, .1);
+  border-color: lighten($danger-states, 5%);
+
+  &:focus {
+    background-color: $transparent-bg;
+  }
+}
+
+.has-success,
+.has-danger {
+  // stylelint-disable
+  &::after {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 11px;
+    color: $success;
+    content: "\f00d";
+  }
+  // stylelint-enable
+
+  &.form-control-lg {
+    &::after {
+      top: 24px;
+      font-size: 13px;
+    }
+  }
+
+  &.has-label {
+    &::after {
+      top: 37px;
+    }
+  }
+
+  &.form-check::after {
+    display: none !important;
+  }
+
+  &.form-check .form-check-label {
+    color: $success;
+  }
+}
+
+.has-danger {
+  &::after {
+    color: $danger-states;
+    content: "\ea48";
+  }
+
+  &.form-check .form-check-label {
+    color: $danger-states;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .form-horizontal .col-form-label,
+  .form-horizontal .label-on-right {
+    padding-top: 0;
+    text-align: inherit;
+
+    code {
+      padding: 0 10px;
+    }
+  }
+}

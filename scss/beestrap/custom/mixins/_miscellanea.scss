@@ -17,6 +17,10 @@
   transition: all $time $type;
 }
 
+@mixin transition-input-focus-color() {
+  transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
 // Opacity
 @mixin opacity($opacity) {
   $opacity-ie: ($opacity * 100);
