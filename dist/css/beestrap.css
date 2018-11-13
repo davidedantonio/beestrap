@@ -21704,4 +21704,142 @@ table.tablesorter thead tr .headerSortDown {
 .badge-success .tagsinput-remove-link {
   color: #fff;
 }
+
+.form-check {
+  padding-left: 0;
+  margin-top: .5rem;
+}
+
+.form-check .form-check-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  margin-bottom: 0;
+  line-height: 18px;
+  cursor: pointer;
+  transition: color .3s linear;
+}
+
+.radio .form-check-sign {
+  padding-left: 28px;
+}
+
+.form-check-radio.form-check-inline .form-check-label {
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+.form-check .form-check-sign::before,
+.form-check .form-check-sign::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  content: " ";
+  border: 1px solid #818181;
+  border-radius: 3px;
+  transition: opacity .3s linear;
+}
+
+.form-check input[type="checkbox"]:checked + .form-check-sign::before {
+  background-color: #6b94ff;
+  border: none;
+}
+
+.form-check .form-check-sign::after {
+  top: 0;
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  content: "\f14a";
+  background-color: inherit;
+  border: 0;
+  opacity: 0;
+}
+
+.form-check.disabled .form-check-label {
+  color: #9a9a9a;
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+.form-check input[type="checkbox"],
+.radio input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form-check input[type="checkbox"]:checked + .form-check-sign::after {
+  margin-top: 0;
+  font-size: 10px;
+  opacity: 1;
+}
+
+.form-check input[type="checkbox"] + .form-check-sign::after {
+  margin-top: 0;
+  font-size: 10px;
+  opacity: 0;
+}
+
+.form-control input[type="checkbox"]:disabled + .form-check-sign::before,
+.checkbox input[type="checkbox"]:disabled + .form-check-sign::after {
+  cursor: not-allowed;
+}
+
+.form-check input[type="checkbox"]:disabled + .form-check-sign,
+.form-check input[type="radio"]:disabled + .form-check-sign {
+  pointer-events: none;
+}
+
+.form-check-radio .form-check-label {
+  padding-top: 3px;
+}
+
+.form-check-radio .form-check-sign::before, .form-check-radio .form-check-sign::after {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 1px;
+  content: " ";
+  border: 1px solid #818181;
+  border-radius: 50%;
+  transition: opacity .3s linear;
+}
+
+.form-check-radio input[type="radio"] + .form-check-sign::after,
+.form-check-radio input[type="radio"] {
+  opacity: 0;
+}
+
+.form-check-radio input[type="radio"]:checked + .form-check-sign::after {
+  top: 9px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
+  background-color: #6b94ff;
+  border-color: #6b94ff;
+  opacity: 1;
+}
+
+.form-check-radio input[type="radio"]:checked + .form-check-sign::before {
+  border-color: #6b94ff;
+}
+
+.form-check-radio input[type="radio"]:disabled + .form-check-sign {
+  color: #9a9a9a;
+}
+
+.form-check-radio input[type="radio"]:disabled + .form-check-sign::before,
+.form-check-radio input[type="radio"]:disabled + .form-check-sign::after {
+  color: #9a9a9a;
+}
 /*# sourceMappingURL=beestrap.css.map */
