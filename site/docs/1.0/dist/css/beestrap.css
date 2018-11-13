@@ -22408,168 +22408,469 @@ img {
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
 }
 
-.info.info-hover .info-title {
-  transition: color .4s;
+.form-group.has-danger .error,
+.input-group.has-danger .error {
+  color: #ec250d;
 }
 
-.info.info-hover:hover .icon {
-  -webkit-transform: translate3d(0, -0.5rem, 0);
-  transform: translate3d(0, -0.5rem, 0);
-}
-
-.info.info-hover:hover .icon.icon-primary.icon-circle {
-  box-shadow: 0 15px 30 0 rgba(249, 99, 50, 0.3);
-}
-
-.info.info-hover:hover .icon.icon-info.icon-circle {
-  box-shadow: 0 15px 35px 0 rgba(44, 168, 255, 0.3);
-}
-
-.info.info-hover:hover .icon.icon-success.icon-circle {
-  box-shadow: 0 15px 35px 0 rgba(24, 206, 15, 0.3);
-}
-
-.info.info-hover:hover .icon.icon-warning.icon-circle {
-  box-shadow: 0 15px 35px 0 rgba(255, 178, 54, 0.3);
-}
-
-.info.info-hover:hover .icon.icon-danger.icon-circle {
-  box-shadow: 0 15px 35px 0 rgba(255, 54, 54, 0.3);
-}
-
-.info.info-hover:hover .icon.icon-info + .info-title {
-  color: #11cdef;
-}
-
-.info.info-hover:hover .icon.icon-warning + .info-title {
-  color: #f9c969;
-}
-
-.info.info-hover:hover .icon.icon-danger + .info-title {
-  color: #f06393;
-}
-
-.info.info-hover:hover .icon.icon-primary + .info-title {
-  color: #6b94ff;
-}
-
-.info.info-hover:hover .icon.icon-success + .info-title {
+.form-group.has-success .error,
+.input-group.has-success .error {
   color: #67cc9a;
 }
 
-.info .icon {
-  color: #344675;
-  transition: box-shadow .4s, -webkit-transform .4s;
-  transition: transform .4s, box-shadow .4s;
-  transition: transform .4s, box-shadow .4s, -webkit-transform .4s;
+.form-group.no-border.form-control-lg .input-group-append .input-group-text,
+.input-group.no-border.form-control-lg .input-group-append .input-group-text {
+  padding: 15px 0 15px 19px;
 }
 
-.info .icon > i {
-  font-size: 2.3em;
+.form-group.no-border.form-control-lg .form-control,
+.input-group.no-border.form-control-lg .form-control {
+  padding: 15px 19px;
 }
 
-.info .icon.icon-circle {
+.form-group.no-border.form-control-lg .form-control + .input-group-prepend .input-group-text,
+.form-group.no-border.form-control-lg .form-control + .input-group-append .input-group-text,
+.input-group.no-border.form-control-lg .form-control + .input-group-prepend .input-group-text,
+.input-group.no-border.form-control-lg .form-control + .input-group-append .input-group-text {
+  padding: 15px 19px 15px 0;
+}
+
+.form-group.form-control-lg .form-control,
+.input-group.form-control-lg .form-control {
+  height: 100%;
+  padding: 14px 18px;
+}
+
+.form-group.form-control-lg .form-control + .input-group-prepend .input-group-text,
+.form-group.form-control-lg .form-control + .input-group-append .input-group-text,
+.input-group.form-control-lg .form-control + .input-group-prepend .input-group-text,
+.input-group.form-control-lg .form-control + .input-group-append .input-group-text {
+  padding: 14px 18px 14px 0;
+}
+
+.form-group.form-control-lg .input-group-prepend .input-group-text,
+.form-group.form-control-lg .input-group-append .input-group-text,
+.input-group.form-control-lg .input-group-prepend .input-group-text,
+.input-group.form-control-lg .input-group-append .input-group-text {
+  padding: 14px 0 15px 18px;
+}
+
+.form-group.form-control-lg .input-group-prepend .input-group-text + .form-control,
+.form-group.form-control-lg .input-group-append .input-group-text + .form-control,
+.input-group.form-control-lg .input-group-prepend .input-group-text + .form-control,
+.input-group.form-control-lg .input-group-append .input-group-text + .form-control {
+  padding: 15px 18px 15px 16px;
+}
+
+.form-group.no-border .form-control,
+.input-group.no-border .form-control {
+  padding: 11px 19px;
+}
+
+.form-group.no-border .form-control + .input-group-prepend .input-group-text,
+.form-group.no-border .form-control + .input-group-append .input-group-text,
+.input-group.no-border .form-control + .input-group-prepend .input-group-text,
+.input-group.no-border .form-control + .input-group-append .input-group-text {
+  padding: 11px 19px 11px 0;
+}
+
+.form-group.no-border .input-group-prepend .input-group-text,
+.form-group.no-border .input-group-append .input-group-text,
+.input-group.no-border .input-group-prepend .input-group-text,
+.input-group.no-border .input-group-append .input-group-text {
+  padding: 11px 0 11px 19px;
+}
+
+.form-group .form-control,
+.input-group .form-control {
+  padding: 10px 18px 10px 18px;
+}
+
+.form-group .form-control + .input-group-prepend .input-group-text,
+.form-group .form-control + .input-group-append .input-group-text,
+.input-group .form-control + .input-group-prepend .input-group-text,
+.input-group .form-control + .input-group-append .input-group-text {
+  padding: 10px 18px 10px 0;
+}
+
+.form-group .input-group-prepend .input-group-text,
+.form-group .input-group-append .input-group-text,
+.input-group .input-group-prepend .input-group-text,
+.input-group .input-group-append .input-group-text {
+  padding: 10px 0 10px 18px;
+}
+
+.form-group .input-group-prepend .input-group-text + .form-control,
+.form-group .input-group-prepend .input-group-text ~ .form-control,
+.form-group .input-group-append .input-group-text + .form-control,
+.form-group .input-group-append .input-group-text ~ .form-control,
+.input-group .input-group-prepend .input-group-text + .form-control,
+.input-group .input-group-prepend .input-group-text ~ .form-control,
+.input-group .input-group-append .input-group-text + .form-control,
+.input-group .input-group-append .input-group-text ~ .form-control {
+  padding: 10px 19px 11px 16px;
+}
+
+.form-group.no-border .form-control,
+.form-group.no-border .form-control + .input-group-prepend .input-group-text,
+.form-group.no-border .form-control + .input-group-append .input-group-text,
+.input-group.no-border .form-control,
+.input-group.no-border .form-control + .input-group-prepend .input-group-text,
+.input-group.no-border .form-control + .input-group-append .input-group-text {
+  background-color: #161932;
+  border: medium none;
+}
+
+.form-group.no-border .form-control:focus, .form-group.no-border .form-control:active, .form-group.no-border .form-control:active,
+.form-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
+.form-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.form-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.form-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.form-group.no-border .form-control + .input-group-append .input-group-text:active,
+.input-group.no-border .form-control:focus,
+.input-group.no-border .form-control:active,
+.input-group.no-border .form-control:active,
+.input-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
+.input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.input-group.no-border .form-control + .input-group-prepend .input-group-text:active,
+.input-group.no-border .form-control + .input-group-append .input-group-text:focus,
+.input-group.no-border .form-control + .input-group-append .input-group-text:active,
+.input-group.no-border .form-control + .input-group-append .input-group-text:active {
+  background-color: #171b35;
+  border: medium none;
+}
+
+.form-group.no-border .form-control:focus + .input-group-prepend .input-group-text,
+.form-group.no-border .form-control:focus + .input-group-append .input-group-text,
+.input-group.no-border .form-control:focus + .input-group-prepend .input-group-text,
+.input-group.no-border .form-control:focus + .input-group-append .input-group-text {
+  background-color: #171b35;
+}
+
+.form-group.no-border .input-group-prepend .input-group-text,
+.form-group.no-border .input-group-append .input-group-text,
+.input-group.no-border .input-group-prepend .input-group-text,
+.input-group.no-border .input-group-append .input-group-text {
+  background-color: #161932;
+  border: none;
+}
+
+.has-error .form-control-feedback,
+.has-error .control-label {
+  color: #ec250d;
+}
+
+.has-success .form-control-feedback,
+.has-success .control-label {
+  color: #67cc9a;
+}
+
+.input-group-append .input-group-text,
+.input-group-prepend .input-group-text {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #1c2040;
+  border-radius: 0.2585rem;
+  transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.input-group-append .input-group-text i,
+.input-group-prepend .input-group-text i {
+  width: 17px;
+  opacity: .5;
+}
+
+.has-danger.input-group-focus .input-group-append .input-group-text, .has-danger.input-group-focus
+.input-group-prepend .input-group-text {
+  background-color: transparent;
+}
+
+.has-success .input-group-append .input-group-text, .has-success
+.input-group-prepend .input-group-text {
+  background-color: transparent;
+}
+
+.has-danger .form-control:focus + .input-group-append .input-group-text, .has-danger .form-control:focus +
+.input-group-prepend .input-group-text {
+  color: #ec250d;
+}
+
+.has-success .form-control:focus + .input-group-append .input-group-text, .has-success .form-control:focus +
+.input-group-prepend .input-group-text {
+  color: #67cc9a;
+}
+
+.input-group-append .input-group-text + .form-control,
+.input-group-append .input-group-text ~ .form-control,
+.input-group-prepend .input-group-text + .form-control,
+.input-group-prepend .input-group-text ~ .form-control {
+  padding: -0.5rem 0.7rem;
+  padding-left: 18px;
+}
+
+.input-group-append,
+.input-group-prepend .input-group-text {
+  margin: 0;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #1c2040;
+  border-radius: 0.2585rem;
+}
+
+.input-group-append .input-group-text {
+  border-left: none;
+}
+
+.input-group-prepend .input-group-text {
+  border-right: none;
+}
+
+.input-group-focus .input-group-prepend .input-group-text,
+.input-group-focus .input-group-append .input-group-text {
+  background-color: transparent;
+  border-color: #6b94ff;
+}
+
+.input-group-focus.no-border .input-group-prepend .input-group-text,
+.input-group-focus.no-border .input-group-append .input-group-text {
+  background-color: #171b35;
+}
+
+.input-group,
+.form-group {
   position: relative;
-  width: 70px;
-  max-width: 70px;
-  height: 70px;
-  margin: 0 auto;
-  font-size: 0.62475rem;
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 9px 35px -6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
 }
 
-.info .icon.icon-circle i {
-  line-height: 2.6em;
+.input-group .form-control-static,
+.form-group .form-control-static {
+  margin-top: 9px;
 }
 
-.info .info-title {
-  padding: 0 15px;
-  margin: 15px 0 5px;
-  font-weight: 600;
-  color: #14172e;
+.input-group[disabled] .input-group-prepend .input-group-text,
+.input-group[disabled] .input-group-append .input-group-text {
+  background-color: #e3e3e3;
 }
 
-.info p {
-  padding: 0 15px;
-  font-size: 1.1em;
+.input-group .form-control:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child) {
+  border-left: 0 none;
+  border-radius: 0.2585rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group .form-control:first-child,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-right: 0 none;
+}
+
+.input-group .form-control:last-child,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child) {
+  border-left: 0 none;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
   color: #344675;
+  cursor: not-allowed;
+  background-color: #1d253b;
 }
 
-.info-horizontal {
-  text-align: left !important;
+.input-group-btn .btn {
+  padding: 11px 0.7rem;
+  border-width: 1px;
 }
 
-.info-horizontal .icon {
+.input-group-btn .btn-default:not(.btn-fill) {
+  border-color: #ddd;
+}
+
+.input-group-btn:last-child > .btn {
+  margin-left: 0;
+}
+
+textarea.form-control {
+  max-width: 100%;
+  max-height: 80px;
+  padding: 10px 10px 0 0;
+  line-height: 2;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #1c2040;
+  border-radius: 0;
+}
+
+textarea.form-control:focus, textarea.form-control:active {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.has-success.form-group .form-control,
+.has-success.form-group.no-border .form-control,
+.has-danger.form-group .form-control,
+.has-danger.form-group.no-border .form-control {
+  padding-right: 40px;
+}
+
+.form.form-newsletter .form-group {
   float: left;
-  margin-top: 23px;
-  margin-right: 10;
+  width: 78%;
+  margin-top: 9px;
+  margin-right: 2%;
 }
 
-.info-horizontal .icon > i {
-  font-size: 2em;
+.input-group .input-group-btn {
+  padding: 0 12px;
 }
 
-.info-horizontal .icon.icon-circle {
-  width: 65px;
-  max-width: 65px;
-  height: 65px;
+.form-group input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.form-text {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control-lg {
+  padding: 0;
+  font-size: inherit;
+  line-height: 0;
+  border-radius: 0;
+}
+
+.form-control-lg .form-control {
+  height: calc(2.875rem + 2px);
+}
+
+.form-horizontal .col-form-label,
+.form-horizontal .label-on-right {
+  max-width: 180px;
+  padding: 10px 5px 0 15px;
+  text-align: right;
+}
+
+.form-horizontal .checkbox-radios {
+  margin-bottom: 15px;
+}
+
+.form-horizontal .checkbox-radios .form-check:first-child {
   margin-top: 8px;
 }
 
-.info-horizontal .icon.icon-circle i {
-  display: table;
-  margin: 0 auto;
-  font-size: 1.9em;
-  line-height: 3.5;
+.form-horizontal .label-on-right {
+  padding: 10px 15px 0 5px;
+  text-align: left;
 }
 
-.info-horizontal .description {
-  overflow: hidden;
+.form-horizontal .form-check-inline {
+  margin-top: 6px;
 }
 
-.icon.icon-primary {
-  color: #6b94ff;
+.form-horizontal .form-check-inline .form-check-label {
+  margin-right: 1.5rem;
 }
 
-.icon.icon-primary.icon-circle {
-  box-shadow: 0 9px 30 -6px rgba(107, 148, 255, 0.5);
+.search-bar {
+  margin-left: 30px;
 }
 
-.icon.icon-info {
-  color: #11cdef;
+.search-bar .btn {
+  margin: 0;
 }
 
-.icon.icon-info.icon-circle {
-  box-shadow: 0 9px 30 -6px rgba(17, 205, 239, 0.5);
+.search-bar.input-group {
+  z-index: 4;
+  height: 43px;
+  margin-bottom: 0;
+  border-radius: 25px;
 }
 
-.icon.icon-success {
-  color: #67cc9a;
+.search-bar.input-group .input-group-addon {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  border: none;
 }
 
-.icon.icon-success.icon-circle {
-  box-shadow: 0 9px 30 -6px rgba(103, 204, 154, 0.5);
-}
-
-.icon.icon-warning {
-  color: #f9c969;
-}
-
-.icon.icon-warning.icon-circle {
-  box-shadow: 0 9px 30 -6px rgba(249, 201, 105, 0.5);
-}
-
-.icon.icon-danger {
-  color: #f06393;
-}
-
-.icon.icon-danger.icon-circle {
-  box-shadow: 0 9px 30 -6px rgba(240, 99, 147, 0.5);
-}
-
-.icon.icon-white {
+.search-bar.input-group i {
+  margin-top: 0 !important;
+  font-size: 20px;
   color: #fff;
+}
+
+.search-bar.input-group input {
+  padding: 12px !important;
+  font-size: 12px;
+  background: transparent;
+  border: none !important;
+  border-radius: 0;
+  opacity: .5;
+}
+
+.search-bar.input-group input:focus {
+  background: transparent;
+}
+
+.search-bar.input-group .form-control {
+  color: #fff;
+  opacity: 1;
+}
+
+.search-bar.input-group .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.search-bar.input-group .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+
+.search-bar.input-group .form-control::placeholder {
+  color: #fff;
+}
+
+.modal-search .modal-dialog {
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.modal-search .modal-dialog .form-control {
+  color: #14172e;
+  border: none;
+}
+
+.modal-search .modal-dialog .form-control::-webkit-input-placeholder {
+  color: #14172e;
+}
+
+.modal-search .modal-dialog .form-control::-ms-input-placeholder {
+  color: #14172e;
+}
+
+.modal-search .modal-dialog .form-control::placeholder {
+  color: #14172e;
+}
+
+.input-group-prepend {
+  margin-right: 0;
+}
+
+.input-group-prepend .bee-icons,
+.input-group-append .bee-icons {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=beestrap.css.map */
