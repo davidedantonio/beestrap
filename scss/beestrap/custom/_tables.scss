@@ -1,0 +1,250 @@
+.table {
+  > tbody > tr > td {
+    color: rgba(255, 255, 255, .7) !important;
+
+    .photo {
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  > tbody > tr.table-success > td {
+    background-color: darken($success, 10%);
+  }
+
+  > tbody > tr.table-info > td {
+    background-color: $info;
+  }
+
+  > tbody > tr.table-primary > td {
+    background-color: $primary;
+  }
+
+  > tbody > tr.table-warning > td {
+    background-color: $warning;
+  }
+
+  > tbody > tr.table-danger > td {
+    background-color: $danger;
+  }
+
+  .img-wrapper {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .img-row {
+    width: 60px;
+    max-width: 60px;
+  }
+
+  .form-check {
+    margin: 0;
+    margin-top: 5px;
+
+    & label .form-check-sign::before,
+    & label .form-check-sign::after {
+      top: -17px;
+      left: 4px;
+    }
+  }
+
+  .btn {
+    margin: 0;
+  }
+
+  small,
+  .small {
+    font-weight: 300;
+  }
+
+  .card-tasks .card-body & {
+    margin-bottom: 0;
+
+    > thead > tr > th,
+    > tbody > tr > th,
+    > tfoot > tr > th,
+    > thead > tr > td,
+    > tbody > tr > td,
+    > tfoot > tr > td {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  > thead > tr > th {
+    font-size: 12px;
+    font-weight: $font-weight-extra-bold;
+    color: rgba($white, .7);
+    text-transform: uppercase;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+  }
+
+  .radio,
+  .checkbox {
+    width: 15px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .icons {
+      position: relative;
+    }
+
+    label {
+      &::after,
+      &::before {
+        top: -17px;
+        left: -3px;
+      }
+    }
+  }
+
+  > thead > tr > th,
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > thead > tr > td,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    padding: 12px 7px;
+    vertical-align: middle;
+    border-color: rgba(255, 255, 255, .1);
+  }
+
+  &.table-shopping tbody tr:last-child td {
+    border: none;
+  }
+
+  .th-description {
+    max-width: 150px;
+  }
+
+  .td-price {
+    position: relative;
+    top: 4px;
+    margin-top: 5px;
+    font-size: 26px;
+    font-weight: $font-weight-light;
+    text-align: right;
+  }
+
+  .td-total {
+    padding-top: 20px;
+    font-size: $h5-font-size;
+    font-weight: $font-weight-bold;
+    text-align: right;
+  }
+
+  .td-actions .btn {
+    margin: 0;
+  }
+
+  > tbody > tr {
+    position: relative;
+  }
+
+  > tfoot > tr {
+    color: hsla(0, 0%, 100%, .7);
+    text-transform: uppercase;
+  }
+}
+
+.table-shopping {
+  > thead > tr > th {
+    text-transform: uppercase;
+  }
+
+  > tbody > tr > td {
+    font-size: $font-paragraph;
+
+    b {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .td-name {
+    min-width: 200px;
+    font-size: 1.5em;
+    font-weight: $font-weight-normal;
+
+
+    small {
+      font-size: .75em;
+      font-weight: $font-weight-light;
+      color: $dark-gray;
+    }
+  }
+
+  .td-number {
+    min-width: 170px;
+    font-weight: $font-weight-light;
+    text-align: right;
+
+    .btn-group {
+      padding-right: 15px;
+    }
+
+    small {
+      margin-right: 3px;
+    }
+  }
+
+  .img-container {
+    display: block;
+    width: 120px;
+    max-height: 160px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.table-responsive {
+  padding-bottom: 10px;
+  overflow: scroll;
+}
+
+table.tablesorter thead tr {
+  .header {
+    cursor: pointer;
+    background-image: url("../img/bg.gif");
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  .headerSortUp {
+    background-image: url("../img/asc.gif");
+  }
+
+  .headerSortDown {
+    background-image: url("../img/desc.gif");
+  }
+}
+
+
+// datatables
+.dataTables_wrapper {
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05);
+  }
+
+  .form-control-sm {
+    font-size: 10px;
+  }
+}
