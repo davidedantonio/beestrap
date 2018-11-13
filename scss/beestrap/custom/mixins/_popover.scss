@@ -1,4 +1,4 @@
-@mixin popover-variant($background) {
+@mixin popover-theme($background) {
   background-color: $background;
 
   .popover-body {

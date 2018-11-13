@@ -21669,4 +21669,39 @@ table.tablesorter thead tr .headerSortDown {
 .popover-darker.bs-popover-left .arrow::after, .popover-darker.bs-popover-auto[x-placement^="left"] .arrow::after {
   border-left-color: black;
 }
+
+.badge {
+  margin-bottom: 5px;
+  line-height: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.badge:hover, .badge:focus {
+  text-decoration: none;
+}
+
+.badge-icon {
+  padding: .4em .55em;
+}
+
+.badge-icon i {
+  font-size: .8em;
+}
+
+.badge-success {
+  color: #fff;
+  background-color: #41bf81;
+}
+
+.badge-success[href]:hover, .badge-success[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #3cb479;
+}
+
+.badge-success .tagsinput-remove-link {
+  color: #fff;
+}
 /*# sourceMappingURL=beestrap.css.map */

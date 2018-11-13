@@ -1,0 +1,24 @@
+.badge {
+  margin-bottom: 5px;
+  line-height: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.badge-icon {
+  padding: .4em .55em;
+
+  i {
+    font-size: .8em;
+  }
+}
+
+.badge-success {
+  @include badge-theme(darken($success, 10%));
+}
