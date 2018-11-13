@@ -21,6 +21,10 @@
   transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
+@mixin transform-translate-y($value) {
+  transform: translate3d(0, $value, 0);
+}
+
 // Opacity
 @mixin opacity($opacity) {
   $opacity-ie: ($opacity * 100);
