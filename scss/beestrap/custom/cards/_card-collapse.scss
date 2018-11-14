@@ -8,14 +8,28 @@
       position: relative;
       padding: 1rem .75rem;
 
-      a[data-toggle="collapse"] {
+      a[data-toggle="collapse"]:not(.collapsed) {
         display: block;
         color: rgba($white, .6);
 
-
         i {
           position: relative;
-          top: 1px;
+          top: 7px;
+          float: right;
+          color: $primary;
+
+          @extend .animation-transition-general;
+        }
+      }
+
+      a[data-toggle="collapse"].collapsed {
+        display: block;
+        color: rgba($white, .6);
+
+        i {
+          @include nc-rotate(180deg, 10);
+          position: relative;
+          top: 7px;
           float: right;
           color: $primary;
 
