@@ -11,3 +11,7 @@
 .animation-transition-general {
   @include transitions($general-transition-time, $transition-ease);
 }
+
+.h-100vh {
+  height: 100vh !important;
+}
