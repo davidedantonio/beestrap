@@ -18234,7 +18234,7 @@ fieldset[disabled]
 
 .main-panel > .content {
   min-height: calc(100vh - 70px);
-  padding: 80px 30px 30px 260px;
+  padding: 0 30px 30px 260px;
 }
 
 .main-panel > .navbar {
@@ -18628,8 +18628,9 @@ fieldset[disabled]
 }
 
 .navbar {
+  position: absolute;
+  right: 0;
   z-index: 1050;
-  width: auto;
   background: #1a1e34;
 }
 
@@ -18657,14 +18658,6 @@ fieldset[disabled]
 
 .navbar .btn {
   margin: 0 5px 0 10px;
-}
-
-.navbar.navbar-fixed {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1050;
-  width: auto;
 }
 
 .navbar.navbar-transparent {
@@ -19136,7 +19129,7 @@ fieldset[disabled]
     margin: 7px 0.7rem;
   }
   .sidebar-mini .navbar {
-    left: 80px;
+    left: calc(80px + 10px);
   }
   .navbar {
     left: calc(260px - 30px);

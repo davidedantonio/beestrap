@@ -1,6 +1,7 @@
 .navbar {
+  position: absolute;
+  right: 0;
   z-index: 1050;
-  width: auto;
   background: $navbar-color;
 
   .photo {
@@ -27,14 +28,6 @@
 
   .btn {
     margin: 0 5px 0 10px;
-  }
-
-  &.navbar-fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1050;
-    width: auto;
   }
 
   &.navbar-transparent {
@@ -392,7 +385,7 @@
 
   .sidebar-mini {
     .navbar {
-      left: $sidebar-mini-width;
+      left: calc(#{$sidebar-mini-width} + 10px);
     }
   }
 
