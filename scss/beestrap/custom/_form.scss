@@ -1,9 +1,9 @@
 /* Form controls */
 @include form-control-placeholder(#6c757c, 1);
 
-.form-control{
-  font-size: $font-size-sm;
-  border-color: lighten($black, 5%);
+.form-control {
+  // font-size: $font-size-sm;
+  border-color: lighten($black, 20%);
   border-radius: $border-radius-lg;
 
   @include transition-input-focus-color();
@@ -88,47 +88,12 @@
 
 .has-success,
 .has-danger {
-  // stylelint-disable
-  &::after {
-    position: absolute;
-    top: 13px;
-    right: 20px;
-    display: inline-block;
-    font-family: "Font Awesome 5 Free";
-    font-size: 11px;
-    color: $success;
-    content: "\f00d";
-  }
-  // stylelint-enable
-
-  &.form-control-lg {
-    &::after {
-      top: 24px;
-      font-size: 13px;
-    }
-  }
-
-  &.has-label {
-    &::after {
-      top: 37px;
-    }
-  }
-
-  &.form-check::after {
-    display: none !important;
-  }
-
   &.form-check .form-check-label {
     color: $success;
   }
 }
 
 .has-danger {
-  &::after {
-    color: $danger-states;
-    content: "\ea48";
-  }
-
   &.form-check .form-check-label {
     color: $danger-states;
   }

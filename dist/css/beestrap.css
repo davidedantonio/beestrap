@@ -21955,8 +21955,7 @@ table.tablesorter thead tr .headerSortDown {
 }
 
 .form-control {
-  font-size: 0.75rem;
-  border-color: #1c2040;
+  border-color: #333b75;
   border-radius: 0.2585rem;
   transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out;
 }
@@ -22038,42 +22037,9 @@ table.tablesorter thead tr .headerSortDown {
   background-color: transparent;
 }
 
-.has-success::after,
-.has-danger::after {
-  position: absolute;
-  top: 13px;
-  right: 20px;
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  font-size: 11px;
-  color: #67cc9a;
-  content: "\f00d";
-}
-
-.has-success.form-control-lg::after,
-.has-danger.form-control-lg::after {
-  top: 24px;
-  font-size: 13px;
-}
-
-.has-success.has-label::after,
-.has-danger.has-label::after {
-  top: 37px;
-}
-
-.has-success.form-check::after,
-.has-danger.form-check::after {
-  display: none !important;
-}
-
 .has-success.form-check .form-check-label,
 .has-danger.form-check .form-check-label {
   color: #67cc9a;
-}
-
-.has-danger::after {
-  color: #ec250d;
-  content: "\ea48";
 }
 
 .has-danger.form-check .form-check-label {

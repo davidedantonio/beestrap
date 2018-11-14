@@ -58,11 +58,11 @@ layout: docs
               <tr>
                 <td class="text-center">
                   <div class="photo">
-                    <img src="../../assets/img/tania.jpg">
+                    <img src="{{ site.baseurl }}/docs/assets/img/davide.jpg">
                   </div>
                 </td>
                 <td>
-                  Andrew Mike
+                  Davide D'Antonio
                 </td>
                 <td>
                   Develop
@@ -85,11 +85,11 @@ layout: docs
               <tr>
                 <td class="text-center">
                   <div class="photo">
-                    <img src="../../assets/img/robi.jpg">
+                    <img src="{{ site.baseurl }}/docs/assets/img/milena.jpg">
                   </div>
                 </td>
                 <td>
-                  John Doe
+                  Milena Cascoigne
                 </td>
                 <td>
                   Design
@@ -112,11 +112,11 @@ layout: docs
               <tr>
                 <td class="text-center">
                   <div class="photo">
-                    <img src="../../assets/img/lora.jpg">
+                    <img src="{{ site.baseurl }}/docs/assets/img/maico.jpg">
                   </div>
                 </td>
                 <td>
-                  Alex Mike
+                  Maico Night
                 </td>
                 <td>
                   Design
@@ -139,14 +139,14 @@ layout: docs
               <tr>
                 <td class="text-center">
                   <div class="photo">
-                    <img src="../../assets/img/jana.jpg">
+                    <img src="{{ site.baseurl }}/docs/assets/img/riccardo.jpg">
                   </div>
                 </td>
                 <td>
-                  Mike Monday
+                  Ric Tar
                 </td>
                 <td>
-                  Marketing
+                  Develop
                 </td>
                 <td class="text-center">
                   2013
@@ -166,11 +166,11 @@ layout: docs
               <tr>
                 <td class="text-center">
                   <div class="photo">
-                    <img src="../../assets/img/robi.jpg">
+                    <img src="{{ site.baseurl }}/docs/assets/img/jacopo.jpg">
                   </div>
                 </td>
                 <td>
-                  Paul Dickens
+                  Jacopo Mele
                 </td>
                 <td>
                   Communication
@@ -193,11 +193,11 @@ layout: docs
               <tr>
                 <td class="text-center">
                   <div class="photo">
-                    <img src="../../assets/img/emilyz.jpg">
+                    <img src="{{ site.baseurl }}/docs/assets/img/paolo.jpg">
                   </div>
                 </td>
                 <td>
-                  Manuel Rico
+                  Paul Parents
                 </td>
                 <td>
                   Manager
@@ -505,7 +505,7 @@ layout: docs
               <tr>
                 <td>
                   <div class="img-container">
-                    <img src="../../assets/img/jacket.png" alt="...">
+                    <img src="{{ site.baseurl }}/docs/assets/img/jacket.png" alt="...">
                   </div>
                 </td>
                 <td class="td-name">
@@ -541,7 +541,7 @@ layout: docs
               <tr>
                 <td>
                   <div class="img-container">
-                    <img src="../../assets/img/t-shirt.png" alt="...">
+                    <img src="{{ site.baseurl }}/docs/assets/img/t-shirt.png" alt="...">
                   </div>
                 </td>
                 <td class="td-name">
@@ -577,7 +577,7 @@ layout: docs
               <tr>
                 <td>
                   <div class="img-container">
-                    <img src="../../assets/img/gucci.png" alt="...">
+                    <img src="{{ site.baseurl }}/docs/assets/img/gucci.png" alt="...">
                   </div>
                 </td>
                 <td class="td-name">

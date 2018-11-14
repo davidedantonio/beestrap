@@ -10,3 +10,7 @@
   pages:
     - title: Regular
     - title: Extended
+- title: Forms
+  icon: fas fa-file
+  pages:
+    - title: Regular
