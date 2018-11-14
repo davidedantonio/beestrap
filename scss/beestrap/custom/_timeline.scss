@@ -1,0 +1,250 @@
+.card.card-timeline {
+  .card-body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .timeline {
+    position: relative;
+    padding: 20px 0 20px;
+    list-style: none;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      margin-left: -1.5px;
+      content: " ";
+      background-color: $black;
+    }
+
+    .timeline-footer {
+      .btn {
+        margin: 0;
+
+        &.dropdown-toggle {
+          i {
+            top: -1px;
+            left: 10px;
+          }
+
+          &::after {
+            margin-left: 20px !important;
+          }
+        }
+      }
+    }
+
+    h6 {
+      margin: 10px 0 0;
+      font-weight: 400;
+      color: rgba($white, .8);
+    }
+
+    &.timeline-simple {
+
+      &::before {
+        left: 5%;
+      }
+
+      > li > .timeline-panel {
+        width: 86%;
+      }
+
+      > li > .timeline-badge {
+        left: 5%;
+      }
+    }
+
+    > li {
+      position: relative;
+      margin-bottom: 20px;
+
+      &::before,
+      &::after {
+        display: table;
+        content: " ";
+      }
+
+      &::after {
+        clear: both;
+      }
+
+    }
+
+    > li > .timeline-panel {
+      position: relative;
+      float: left;
+      width: 45%;
+      padding: 20px;
+      margin-bottom: 20px;
+      color: $black;
+      background: $card-black-background;
+      border-radius: $border-radius-sm;
+      box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
+
+      &::before {
+        position: absolute;
+        top: 26px;
+        right: -15px;
+        display: inline-block;
+        content: " ";
+        border-top: 15px solid transparent;
+        border-right: 0 solid $black;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid $black;
+      }
+
+      &::after {
+        position: absolute;
+        top: 27px;
+        right: -14px;
+        display: inline-block;
+        content: " ";
+        border-top: 14px solid transparent;
+        border-right: 0 solid $card-black-background;
+        border-bottom: 14px solid transparent;
+        border-left: 14px solid $card-black-background;
+      }
+
+      &.timeline-panel-white {
+        background: $white;
+
+        .timeline-body p {
+          color: $black-states;
+        }
+
+        &::after,
+        &::before {
+          border-right-color: $white;
+          border-left-color: $white;
+        }
+      }
+    }
+
+    > li > .timeline-badge {
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      z-index: 100;
+      width: 50px;
+      height: 50px;
+      margin-left: -25px;
+      font-size: 1.4em;
+      line-height: 51px;
+      color: $white;
+      text-align: center;
+      background-color: $dark-gray;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+
+      [class^="#{$prefix}-"],
+      [class*=" #{$prefix}-"] {
+        line-height: inherit;
+      }
+
+      .#{$prefix}-icons {
+        width: 25px;
+        height: 21px;
+        text-align: center;
+      }
+    }
+
+    > li.timeline-inverted > .timeline-panel {
+      float: right;
+
+      &::before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+
+      &::after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+    }
+  }
+
+  .timeline-heading {
+    margin-bottom: 15px;
+  }
+
+  .timeline-badge.primary {
+    background-color: $info !important;
+  }
+
+  .timeline-badge.info {
+    background-color: $info !important;
+  }
+
+  .timeline-badge.success {
+    background-color: darken($success, 10%) !important;
+  }
+
+  .timeline-badge.warning {
+    background-color: $warning !important;
+  }
+
+  .timeline-badge.danger {
+    background-color: $danger !important;
+  }
+
+
+  .timeline-title {
+    margin-top: 0;
+    color: inherit;
+  }
+
+  .timeline-body > p,
+  .timeline-body > ul {
+    margin-bottom: 0;
+    color: $white;
+  }
+
+  .timeline-body > p + p {
+    margin-top: 5px;
+  }
+
+
+}
+
+@include media-breakpoint-down(sm) {
+  .card.card-timeline {
+    .timeline {
+      &::before {
+        left: 5%;
+      }
+
+      > li > .timeline-badge {
+        left: 5%;
+      }
+
+      > li > .timeline-panel {
+        float: right;
+        width: 83% !important;
+
+        &::before {
+          right: auto;
+          left: -15px;
+          border-right-width: 15px;
+          border-left-width: 0;
+        }
+
+        &::after {
+          right: auto;
+          left: -14px;
+          border-right-width: 14px;
+          border-left-width: 0;
+        }
+      }
+    }
+  }
+}

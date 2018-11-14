@@ -22977,4 +22977,232 @@ textarea.form-control:focus, textarea.form-control:active {
     display: none !important;
   }
 }
+
+.card.card-timeline .card-body {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.card.card-timeline .timeline {
+  position: relative;
+  padding: 20px 0 20px;
+  list-style: none;
+}
+
+.card.card-timeline .timeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  margin-left: -1.5px;
+  content: " ";
+  background-color: #14172e;
+}
+
+.card.card-timeline .timeline .timeline-footer .btn {
+  margin: 0;
+}
+
+.card.card-timeline .timeline .timeline-footer .btn.dropdown-toggle i {
+  top: -1px;
+  left: 10px;
+}
+
+.card.card-timeline .timeline .timeline-footer .btn.dropdown-toggle::after {
+  margin-left: 20px !important;
+}
+
+.card.card-timeline .timeline h6 {
+  margin: 10px 0 0;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card.card-timeline .timeline.timeline-simple::before {
+  left: 5%;
+}
+
+.card.card-timeline .timeline.timeline-simple > li > .timeline-panel {
+  width: 86%;
+}
+
+.card.card-timeline .timeline.timeline-simple > li > .timeline-badge {
+  left: 5%;
+}
+
+.card.card-timeline .timeline > li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card.card-timeline .timeline > li::before, .card.card-timeline .timeline > li::after {
+  display: table;
+  content: " ";
+}
+
+.card.card-timeline .timeline > li::after {
+  clear: both;
+}
+
+.card.card-timeline .timeline > li > .timeline-panel {
+  position: relative;
+  float: left;
+  width: 45%;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #14172e;
+  background: #1d233e;
+  border-radius: 0.2857rem;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card.card-timeline .timeline > li > .timeline-panel::before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  content: " ";
+  border-top: 15px solid transparent;
+  border-right: 0 solid #14172e;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #14172e;
+}
+
+.card.card-timeline .timeline > li > .timeline-panel::after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  content: " ";
+  border-top: 14px solid transparent;
+  border-right: 0 solid #1d233e;
+  border-bottom: 14px solid transparent;
+  border-left: 14px solid #1d233e;
+}
+
+.card.card-timeline .timeline > li > .timeline-panel.timeline-panel-white {
+  background: #fff;
+}
+
+.card.card-timeline .timeline > li > .timeline-panel.timeline-panel-white .timeline-body p {
+  color: #1d253b;
+}
+
+.card.card-timeline .timeline > li > .timeline-panel.timeline-panel-white::after, .card.card-timeline .timeline > li > .timeline-panel.timeline-panel-white::before {
+  border-right-color: #fff;
+  border-left-color: #fff;
+}
+
+.card.card-timeline .timeline > li > .timeline-badge {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  font-size: 1.4em;
+  line-height: 51px;
+  color: #fff;
+  text-align: center;
+  background-color: #9a9a9a;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.card.card-timeline .timeline > li > .timeline-badge [class^="bee-"],
+.card.card-timeline .timeline > li > .timeline-badge [class*=" bee-"] {
+  line-height: inherit;
+}
+
+.card.card-timeline .timeline > li > .timeline-badge .bee-icons {
+  width: 25px;
+  height: 21px;
+  text-align: center;
+}
+
+.card.card-timeline .timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+.card.card-timeline .timeline > li.timeline-inverted > .timeline-panel::before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.card.card-timeline .timeline > li.timeline-inverted > .timeline-panel::after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.card.card-timeline .timeline-heading {
+  margin-bottom: 15px;
+}
+
+.card.card-timeline .timeline-badge.primary {
+  background-color: #11cdef !important;
+}
+
+.card.card-timeline .timeline-badge.info {
+  background-color: #11cdef !important;
+}
+
+.card.card-timeline .timeline-badge.success {
+  background-color: #41bf81 !important;
+}
+
+.card.card-timeline .timeline-badge.warning {
+  background-color: #f9c969 !important;
+}
+
+.card.card-timeline .timeline-badge.danger {
+  background-color: #f06393 !important;
+}
+
+.card.card-timeline .timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.card.card-timeline .timeline-body > p,
+.card.card-timeline .timeline-body > ul {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.card.card-timeline .timeline-body > p + p {
+  margin-top: 5px;
+}
+
+@media (max-width: 767.98px) {
+  .card.card-timeline .timeline::before {
+    left: 5%;
+  }
+  .card.card-timeline .timeline > li > .timeline-badge {
+    left: 5%;
+  }
+  .card.card-timeline .timeline > li > .timeline-panel {
+    float: right;
+    width: 83% !important;
+  }
+  .card.card-timeline .timeline > li > .timeline-panel::before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+  }
+  .card.card-timeline .timeline > li > .timeline-panel::after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+  }
+}
 /*# sourceMappingURL=beestrap.css.map */
