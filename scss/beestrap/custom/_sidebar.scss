@@ -21,15 +21,17 @@
 .sidebar,
 .off-canvas-sidebar {
   @include linear-gradient($primary-states, $primary);
+
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
   z-index: 1;
   display: block;
   width: 230px;
-  height: 100vh;
   background-position: center center;
   background-size: cover;
+  border-radius: 7px;
   box-shadow: 0 0 45px 0 rgba(0, 0, 0, .6);
 
   .sidebar-wrapper {
@@ -144,8 +146,8 @@
         display: block;
         padding: 10px 8px;
         margin: 10px 15px 0;
-        font-size: $font-size-xs;
-        line-height: $line-height-lg;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
         color: $white;
         text-decoration: none;
         text-transform: uppercase;
