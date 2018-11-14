@@ -5,3 +5,8 @@
     - title: Buttons
     - title: Panels
     - title: Grid
+- title: Tables
+  icon: fas fa-table
+  pages:
+    - title: Regular
+    - title: Extended
