@@ -2,39 +2,165 @@
 layout: docs
 ---
 <div class="row">
-  <div class="col-md-12">
-    <button class="btn">Default</button>
-    <button class="btn btn-primary">Primary</button>
-    <button class="btn btn-info">Info</button>
-    <br>
-    <button class="btn btn-success animation-on-hover">Success</button>
-    <button class="btn btn-warning">Warning</button>
-    <button class="btn btn-danger">Danger</button>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Pick your Color</h4>
+      </div>
+      <div class="card-body">
+        <button class="btn">Default</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-info">Info</button>
+        <br>
+        <button class="btn btn-success animation-on-hover" type="button" rel="tooltip" data-original-title="I'm special!" data-placement="bottom">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Buttons with Label</h4>
+      </div>
+      <div class="card-body">
+        <button class="btn">
+          <i class="bee-icons fas fa-chevron-left"></i> Left
+        </button>
+        <button class="btn">
+          Right
+          <i class="bee-icons fas fa-chevron-right"></i>
+        </button>
+        <button class="btn btn-info">
+          <i class="bee-icons fas fa-exclamation"></i> Info
+        </button>
+        <br>
+        <button class="btn btn-success">
+          <i class="bee-icons fas fa-check"></i> Success
+        </button>
+        <button class="btn btn-warning">
+          <i class="bee-icons fas fa-clock"></i> Warning
+        </button>
+        <button class="btn btn-danger">
+          <i class="bee-icons fas fa-trash"></i> Danger
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-12">
-    <button class="btn btn-primary btn-sm">Small</button>
-    <button class="btn btn-primary">Regular</button>
-    <button class="btn btn-primary btn-lg">Large</button>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Pick your Size</h4>
+      </div>
+      <div class="card-body">
+        <button class="btn btn-primary btn-sm">Small</button>
+        <button class="btn btn-primary">Regular</button>
+        <button class="btn btn-primary btn-lg">Large</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Pick your Style</h4>
+      </div>
+      <div class="card-body">
+        <button class="btn btn-primary">Default</button>
+        <button class="btn btn-primary btn-round">round</button>
+        <button class="btn btn-primary btn-round">
+          <i class="tim-icons icon-heart-2"></i> with icon
+        </button>
+        <button class="btn btn-primary btn-round btn-icon">
+          <i class="bee-icons fas fa-heart"></i>
+        </button>
+        <button class="btn btn-primary btn-simple">
+          simple
+        </button>
+        <button class="btn btn-primary btn-link">
+          link
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-12">
-    <button class="btn btn-primary">Default</button>
-    <button class="btn btn-primary btn-round">round</button>
-    <button class="btn btn-primary btn-round">
-      <i class="tim-icons icon-heart-2"></i> with icon
-    </button>
-    <button class="btn btn-primary btn-round btn-icon">
-      <i class="tim-icons icon-heart-2"></i>
-    </button>
-    <button class="btn btn-primary btn-simple">
-      simple
-    </button>
-    <button class="btn btn-primary btn-link">
-      link
-    </button>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Pagination</h4>
+      </div>
+      <div class="card-body">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination pagination-warning">
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#link">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#link">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#link">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#link">5</a>
+            </li>
+          </ul>
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#link" aria-label="Previous">
+                <span aria-hidden="true"><i class="bee-icons fas fa-chevron-left" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#link">1</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#link">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#link">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#link" aria-label="Next">
+                <span aria-hidden="true"><i class="bee-icons fas fa-chevron-right" aria-hidden="true"></i></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Button Group</h4>
+      </div>
+      <div class="card-body">
+        <div class="btn-group">
+          <button type="button" class="btn btn-info">Left</button>
+          <button type="button" class="btn btn-info">Middle</button>
+          <button type="button" class="btn btn-info">Right</button>
+        </div>
+        <br>
+        <br>
+        <div class="btn-group" data-toggle="buttons">
+          <button type="button" class="btn btn-round btn-info">1</button>
+          <button type="button" class="btn btn-round btn-info">2</button>
+          <button type="button" class="btn btn-round btn-info">3</button>
+          <button type="button" class="btn btn-round btn-info">4</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-round btn-info">5</button>
+          <button type="button" class="btn btn-round btn-info">6</button>
+          <button type="button" class="btn btn-round btn-info">7</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
