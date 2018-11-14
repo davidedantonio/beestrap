@@ -15325,7 +15325,8 @@ a.text-darker:hover, a.text-darker:focus {
 .off-canvas-sidebar .user a,
 .sidebar .user .info > a > span,
 .off-canvas-sidebar .user .info > a > span,
-.card-collapse .card .card-header a[data-toggle="collapse"] i {
+.card-collapse .card .card-header a[data-toggle="collapse"]:not(.collapsed) i,
+.card-collapse .card .card-header a[data-toggle="collapse"].collapsed i {
   transition: all 300ms ease 0s;
 }
 
@@ -17714,14 +17715,15 @@ fieldset[disabled]
   background: #ba54f5;
   background: linear-gradient(0deg, #ba54f5 0%, #6b94ff 100%);
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
   z-index: 1;
   display: block;
   width: 230px;
-  height: 100vh;
   background-position: center center;
   background-size: cover;
+  border-radius: 7px;
   box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -17845,8 +17847,8 @@ fieldset[disabled]
   display: block;
   padding: 10px 8px;
   margin: 10px 15px 0;
-  font-size: 0.62475rem;
-  line-height: 1.625rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -23616,7 +23618,6 @@ textarea.form-control:focus, textarea.form-control:active {
   margin-bottom: 30px;
   background: #1d233e;
   border: 0;
-  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
 .card label {
@@ -23657,7 +23658,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .card .card-header:not([data-background-color]) {
-  background-color: #222a45 !important;
+  background-color: inherit !important;
 }
 
 .card .card-header .card-title {
@@ -24090,14 +24091,30 @@ textarea.form-control:focus, textarea.form-control:active {
   padding: 1rem .75rem;
 }
 
-.card-collapse .card .card-header a[data-toggle="collapse"] {
+.card-collapse .card .card-header a[data-toggle="collapse"]:not(.collapsed) {
   display: block;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.card-collapse .card .card-header a[data-toggle="collapse"] i {
+.card-collapse .card .card-header a[data-toggle="collapse"]:not(.collapsed) i {
   position: relative;
-  top: 1px;
+  top: 7px;
+  float: right;
+  color: #6b94ff;
+}
+
+.card-collapse .card .card-header a[data-toggle="collapse"].collapsed {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-collapse .card .card-header a[data-toggle="collapse"].collapsed i {
+  -webkit-filter: progid:dximagetransform.microsoft.basicimage(rotation=10);
+  filter: progid:dximagetransform.microsoft.basicimage(rotation=10);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  position: relative;
+  top: 7px;
   float: right;
   color: #6b94ff;
 }
