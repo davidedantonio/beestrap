@@ -1,0 +1,81 @@
+.card-user {
+  overflow: hidden;
+
+  .image {
+    height: 120px;
+  }
+
+  .author {
+    margin-top: 25px;
+    text-align: center;
+    text-transform: none;
+
+    a + p.description {
+      margin-top: -7px;
+    }
+
+    .block {
+      position: absolute;
+      width: 250px;
+      height: 100px;
+
+      &.block-one {
+        margin-top: -90px;
+        margin-left: -50px;
+
+        @include linear-gradient-right(rgba($primary, .6), rgba($primary, 0));
+        @include nc-rotate(150deg, 10);
+      }
+
+      &.block-two {
+        margin-top: -40px;
+        margin-left: -100px;
+
+        @include linear-gradient-right(rgba($primary, .6), rgba($primary, 0));
+        @include nc-rotate(30deg, 10);
+      }
+
+      &.block-three {
+        right: -45px;
+        margin-top: -70px;
+
+        @include linear-gradient-right(rgba($primary, .6), rgba($primary, 0));
+        @include nc-rotate(170deg, 10);
+      }
+
+      &.block-four {
+        right: -45px;
+        margin-top: -25px;
+
+        @include linear-gradient-right(rgba($primary, .6), rgba($primary, 0));
+        @include nc-rotate(150deg, 10);
+      }
+    }
+  }
+
+  .avatar {
+    position: relative;
+    width: 124px;
+    height: 124px;
+    background-color: $transparent-bg;
+    border: 5px solid lighten($black, 5%);
+    border-bottom-color: $transparent-bg;
+  }
+
+  .card-body {
+    min-height: 240px;
+  }
+
+  hr {
+    margin: 5px 15px;
+  }
+
+  .button-container {
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .card-description {
+    margin-top: 30px;
+  }
+}

@@ -9,6 +9,16 @@
   background: linear-gradient(0deg, $color 0%, $states-color 100%);
 }
 
+@mixin linear-gradient-right($color, $states-color){
+  background: $color;
+  background: linear-gradient(to right, $color 0%, $states-color 100%);
+}
+
+@mixin nc-rotate($degrees, $rotation) {
+  filter: progid:dximagetransform.microsoft.basicimage(rotation=#{$rotation});
+  transform: rotate($degrees);
+}
+
 @mixin transform-translate-x($value){
   transform: translate3d($value, 0, 0);
 }

@@ -1,0 +1,204 @@
+.card-pricing {
+  position: relative;
+  z-index: 1;
+  min-height: 400px;
+  box-shadow: none;
+
+  .card-body {
+    padding: 0;
+    overflow: hidden;
+
+    .card-title {
+      position: relative;
+      z-index: 1;
+      margin-left: -5px;
+      font-size: 5em;
+      font-weight: 900;
+      color: $black;
+      text-transform: lowercase;
+
+      &.card-title-right {
+        margin-right: -5px;
+        text-align: right;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      border-radius: $border-radius-sm;
+    }
+
+    .card-prices {
+      .text-on-front {
+        position: relative;
+        z-index: 2;
+        font-size: 3.6em;
+        font-weight: 900;
+        color: rgba($white, .9);
+        text-align: center;
+
+        span {
+
+          font-size: .7em;
+        }
+      }
+
+      .text-on-back {
+        position: relative;
+        z-index: 1;
+        margin-top: -160px;
+        font-size: 9.5em;
+        font-weight: 900;
+        color: rgba($default-states, .1);
+        text-align: center;
+      }
+
+      .plan {
+        margin-top: -80px;
+        font-size: .8em;
+        font-weight: 600;
+        color: rgba($white, .9);
+        text-align: center;
+      }
+    }
+  }
+
+  ul {
+    max-width: 240px;
+    padding: 0;
+    margin: 80px auto 40px;
+    list-style: none;
+
+    li {
+      padding: 5px 0;
+      font-size: 1.2em;
+      font-weight: $font-weight-bold;
+      color: rgba($white, .9);
+      text-align: center;
+      background: $transparent-bg;
+      border: none;
+
+    }
+  }
+
+  &.card-white {
+    background: $white;
+
+    .card-body {
+      .card-title {
+        color: $white;
+      }
+    }
+
+    .card-body .card-prices {
+
+      .text-on-front,
+      .plan {
+        color: $default-states;
+
+        span {
+          color: $default-states;
+        }
+      }
+    }
+
+    ul li {
+
+      color: $default-states;
+    }
+
+    .list-group-item {
+      background: $transparent-bg;
+    }
+  }
+
+  &.card-primary {
+    .card-body .card-prices {
+      .text-on-back {
+        color: rgba($primary, .1);
+      }
+    }
+  }
+
+  &.card-info {
+    .text-on-back {
+      color: rgba($info, .1);
+    }
+  }
+
+  &.card-success {
+    .card-body .card-prices {
+      .text-on-back {
+        color: rgba($success, .1);
+      }
+    }
+  }
+
+  &.card-warning {
+    .card-body .card-prices {
+      .text-on-back {
+        color: rgba($warning, .1);
+      }
+    }
+  }
+
+  &.card-danger {
+    .card-body .card-prices {
+      .text-on-back {
+        color: rgba($danger, .1);
+      }
+    }
+  }
+
+  &.card-raised {
+    z-index: 3;
+    padding: 20px 0;
+    margin-top: -20px;
+    border-radius: $border-radius-sm;
+    box-shadow: 0 0 40px 15px rgba($default-states, .3);
+
+    img {
+      border-radius: $border-radius-sm;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .pricing-page {
+    [class*="col-"] {
+      &:first-child {
+        padding-right: 0;
+
+        .card:not(.card-raised) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+
+      &:not(:first-child):not(:last-child) {
+        padding: 0;
+
+        .card:not(.card-raised) {
+          border-radius: 0;
+
+          img {
+            border-radius: 0;
+          }
+        }
+      }
+
+      &:last-child {
+        padding-left: 0;
+
+        .card:not(.card-raised) {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}

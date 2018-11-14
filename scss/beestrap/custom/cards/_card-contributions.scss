@@ -1,0 +1,54 @@
+.card-contributions {
+  @extend %card-stats;
+
+  .card-description {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    padding-top: 35px;
+  }
+
+  .card-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px;
+  }
+
+  .card-footer {
+    [class*="col-"]:not(:first-child)::before {
+      position: absolute;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      content: "";
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+
+  .bootstrap-switch {
+    margin: 0;
+  }
+
+  span {
+    max-width: 125px;
+    padding-left: 15px;
+    color: $opacity-6;
+    text-align: left;
+  }
+}
+
+
+@include media-breakpoint-down(xs) {
+
+  .card-contributions .card-stats {
+    flex-direction: column;
+
+    .bootstrap-switch {
+      margin-bottom: 15px;
+    }
+  }
+}

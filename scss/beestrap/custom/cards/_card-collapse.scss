@@ -1,0 +1,49 @@
+.card-collapse {
+  .card {
+    margin-bottom: 0;
+    background: $transparent-bg;
+    box-shadow: none;
+
+    .card-header {
+      position: relative;
+      padding: 1rem .75rem;
+
+      a[data-toggle="collapse"] {
+        display: block;
+        color: rgba($white, .6);
+
+
+        i {
+          position: relative;
+          top: 1px;
+          float: right;
+          color: $primary;
+
+          @extend .animation-transition-general;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        content: "";
+        background: rgba($white, .1);
+      }
+    }
+
+    .card-body {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      color: rgba($white, .5);
+    }
+
+    &:last-child {
+      .card-header::after {
+        content: none;
+      }
+    }
+  }
+}

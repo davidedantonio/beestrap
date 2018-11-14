@@ -51,7 +51,6 @@
 @import "beestrap/custom/miscellanea";
 @import "beestrap/custom/typography";
 @import "beestrap/custom/buttons";
-@import "beestrap/custom/card";
 @import "beestrap/custom/pills";
 @import "beestrap/custom/tabs";
 @import "beestrap/custom/alert";
@@ -73,4 +72,26 @@
 @import "beestrap/custom/input-group";
 @import "beestrap/custom/pagination";
 @import "beestrap/custom/timeline";
+
+// light theme
 @import "beestrap/custom/light-content";
+
+// Cards
+
+@import "beestrap/custom/card";
+@import "beestrap/custom/cards/card-chart";
+@import "beestrap/custom/cards/card-map";
+@import "beestrap/custom/cards/card-user";
+@import "beestrap/custom/cards/card-task";
+@import "beestrap/custom/cards/card-animation";
+@import "beestrap/custom/cards/card-collapse";
+@import "beestrap/custom/cards/card-stats";
+@import "beestrap/custom/cards/card-contributions";
+@import "beestrap/custom/cards/card-lock";
+@import "beestrap/custom/cards/card-pricing";
+@import "beestrap/custom/cards/card-profile";
+@import "beestrap/custom/cards/card-plain";
+@import "beestrap/custom/cards/card-register";
+@import "beestrap/custom/cards/card-subcategories";
+@import "beestrap/custom/cards/card-testimonials";
+@import "beestrap/custom/cards/card-wizard";

@@ -1,0 +1,16 @@
+.card-plain {
+  background: transparent;
+  box-shadow: none;
+
+  .card-header,
+  .card-footer {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: transparent;
+  }
+
+  &:not(.card-subcategories).card-body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
