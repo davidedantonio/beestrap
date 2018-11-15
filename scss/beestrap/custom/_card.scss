@@ -43,7 +43,7 @@
     border: 0;
 
     &:not([data-background-color]) {
-      background-color: inherit !important;
+      background-color: transparent !important;
     }
 
     .card-title {
