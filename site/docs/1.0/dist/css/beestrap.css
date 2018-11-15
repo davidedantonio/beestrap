@@ -23651,7 +23651,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .card .card-header:not([data-background-color]) {
-  background-color: inherit !important;
+  background-color: transparent !important;
 }
 
 .card .card-header .card-title {
