@@ -2,7 +2,7 @@
   position: absolute;
   right: 0;
   z-index: 1050;
-  background: $navbar-color;
+  background: $navbar-color !important;
 
   .photo {
     display: inline-block;
@@ -28,10 +28,6 @@
 
   .btn {
     margin: 0 5px 0 10px;
-  }
-
-  &.navbar-transparent {
-    background: transparent !important;
   }
 
   &.bg-white {

@@ -18631,7 +18631,7 @@ fieldset[disabled]
   position: absolute;
   right: 0;
   z-index: 1050;
-  background: #1a1e34;
+  background: transparent !important;
 }
 
 .navbar .photo {
@@ -18658,10 +18658,6 @@ fieldset[disabled]
 
 .navbar .btn {
   margin: 0 5px 0 10px;
-}
-
-.navbar.navbar-transparent {
-  background: transparent !important;
 }
 
 .navbar.bg-white .navbar-nav .search-bar.input-group i {
