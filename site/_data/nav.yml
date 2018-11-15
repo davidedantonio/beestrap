@@ -14,3 +14,7 @@
   icon: fas fa-file
   pages:
     - title: Regular
+- title: Pages
+  icon: fas fa-image
+  pages:
+    - title: Timeline

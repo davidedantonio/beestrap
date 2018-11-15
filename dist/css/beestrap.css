@@ -18234,7 +18234,7 @@ fieldset[disabled]
 
 .main-panel > .content {
   min-height: calc(100vh - 70px);
-  padding: 0 30px 30px 260px;
+  padding: 80px 30px 30px 260px;
 }
 
 .main-panel > .navbar {
@@ -22797,7 +22797,7 @@ textarea.form-control:focus, textarea.form-control:active {
   width: 3px;
   margin-left: -1.5px;
   content: " ";
-  background-color: #14172e;
+  background-color: #32325d;
 }
 
 .card.card-timeline .timeline .timeline-footer .btn {
