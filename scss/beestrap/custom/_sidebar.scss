@@ -560,7 +560,7 @@
     position: fixed;
     top: 0;
     right: auto;
-    left: 0;
+    left: -$sidebar-width;
     z-index: 1032;
     display: block;
     width: $sidebar-width;
@@ -690,7 +690,6 @@
 
       // stylelint-disable
       .sidebar-wrapper {
-        width: $sidebar-mini-width;
         overflow-x: hidden;
 
         > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
@@ -806,7 +805,7 @@
     position: fixed;
     top: 0;
     right: auto;
-    left: 0;
+    left: -$sidebar-width;
     z-index: 1032;
     display: block;
     width: $sidebar-width !important;
