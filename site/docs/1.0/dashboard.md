@@ -37,14 +37,14 @@ layout: docs
       <div class="card-body ">
         <div class="row">
           <div class="col-5">
-            <div class="info-icon text-center icon-warning">
-              <i class="bee-icons far fa-comments"></i>
+            <div class="fa-4x">
+              <i class="bee-icons fab fa-github"></i>
             </div>
           </div>
           <div class="col-7">
             <div class="numbers">
-              <p class="card-category">Number</p>
-              <h3 class="card-title">150GB</h3>
+              <p class="card-category">Repositories</p>
+              <h1 class="card-title">17</h1>
             </div>
           </div>
         </div>
@@ -62,14 +62,14 @@ layout: docs
       <div class="card-body ">
         <div class="row">
           <div class="col-5">
-            <div class="info-icon text-center icon-primary">
-              <i class="bee-icons far fa-star"></i>
+            <div class="fa-4x text-primary">
+              <i class="bee-icons fab fa-react"></i>
             </div>
           </div>
           <div class="col-7">
             <div class="numbers">
-              <p class="card-category">Followers</p>
-              <h3 class="card-title">+45k</h3>
+              <p class="card-category">React JS</p>
+              <h1 class="card-title">+45k</h1>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ layout: docs
       <div class="card-footer ">
         <hr>
         <div class="stats">
-          <i class="bee-icons fas fa-chart-line"></i> Last Research
+          <i class="bee-icons fas fa-chart-line"></i> Line of code
         </div>
       </div>
     </div>
@@ -87,14 +87,14 @@ layout: docs
       <div class="card-body ">
         <div class="row">
           <div class="col-5">
-            <div class="info-icon text-center icon-success">
-              <i class="bee-icons fas fa-user"></i>
+            <div class="fa-4x text-success">
+              <i class="bee-icons fab fa-node-js"></i>
             </div>
           </div>
           <div class="col-7">
             <div class="numbers">
-              <p class="card-category">Users</p>
-              <h3 class="card-title">150,000</h3>
+              <p class="card-category">Node.js</p>
+              <h1 class="card-title text-success">26</h1>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ layout: docs
       <div class="card-footer ">
         <hr>
         <div class="stats">
-          <i class="bee-icons fas fa-trophy"></i> Customers feedback
+          <i class="bee-icons fas fa-trophy"></i> Passed test
         </div>
       </div>
     </div>
@@ -112,14 +112,14 @@ layout: docs
       <div class="card-body ">
         <div class="row">
           <div class="col-5">
-            <div class="info-icon text-center icon-danger">
+            <div class="fa-4x text-danger">
               <i class="bee-icons fab fa-angular"></i>
             </div>
           </div>
           <div class="col-7">
             <div class="numbers">
               <p class="card-category">Errors</p>
-              <h3 class="card-title">12</h3>
+              <h1 class="card-title">12</h1>
             </div>
           </div>
         </div>
@@ -135,8 +135,8 @@ layout: docs
   <div class="col-lg-4">
     <div class="card card-chart">
       <div class="card-header ">
-        <h5 class="card-category">Total Shipments</h5>
-        <h3 class="card-title"><i class="bee-icons fas fa-bell text-primary "></i> 763,215</h3>
+        <h5 class="card-category">Total push</h5>
+        <h3 class="card-title"><i class="bee-icons fab fa-github text-primary "></i> 580</h3>
       </div>
       <div class="card-body ">
         <div class="chart-area">
@@ -148,8 +148,8 @@ layout: docs
   <div class="col-lg-4">
     <div class="card card-chart">
       <div class="card-header ">
-        <h5 class="card-category">Daily Sales</h5>
-        <h3 class="card-title"><i class="bee-icons fas fa-truck text-info"></i> 3,500€</h3>
+        <h5 class="card-category">LinkedIn visits this week</h5>
+        <h3 class="card-title"><i class="bee-icons fab fa-linkedin text-info"></i> 308</h3>
       </div>
       <div class="card-body ">
         <div class="chart-area">
@@ -162,7 +162,7 @@ layout: docs
     <div class="card card-chart">
       <div class="card-header ">
         <h5 class="card-category">Completed Tasks</h5>
-        <h3 class="card-title"><i class="bee-icons fas fa-paper-plane text-success "></i> 12,100K</h3>
+        <h3 class="card-title"><i class="bee-icons fab fa-bitbucket text-success "></i> 12,100K</h3>
       </div>
       <div class="card-body ">
         <div class="chart-area">

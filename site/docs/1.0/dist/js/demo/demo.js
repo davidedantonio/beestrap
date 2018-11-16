@@ -388,7 +388,7 @@ var demo = {
         display: false
       },
       data: {
-        labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
+        labels: ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
         datasets: [{
           label: "Countries",
           fill: true,
