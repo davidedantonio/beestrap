@@ -45,16 +45,17 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #5e72e4 !default;
-$indigo:  #5603ad !default;
-$purple:  #8965e0 !default;
-$pink:    #f3a4b5 !default;
-$red:     #f5365c !default;
-$orange:  #fb6340 !default;
-$yellow:  #ffd600 !default;
-$green:   #2dce89 !default;
-$teal:    #11cdef !default;
-$cyan:    #2bffc6 !default;
+$blue:     #2196f3 !default;
+$indigo:   #3f51b5 !default;
+$purple:   #9c27b0 !default;
+$pink:     #e91e63 !default;
+$red:      #f44336 !default;
+$orange:   #ff9800 !default;
+$yellow:   #ffeb3b !default;
+$green:    #4caf50 !default;
+$teal:     #009688 !default;
+$cyan:     #00bcd4 !default;
+$blue-grey:#607d8b !default;
 
 $line-height-lg:              1.625rem !default;
 $line-height-sm:              1.5 !default;
@@ -95,7 +96,8 @@ $colors: map-merge(
     "gray":       $gray-600,
     "light":      $gray-400,
     "lighter":    $gray-200,
-    "gray-dark":  $gray-800
+    "gray-dark":  $gray-800,
+    "blue-grey":  $blue-grey
   ),
   $colors
 );
@@ -103,23 +105,23 @@ $colors: map-merge(
 $default-color-opacity:      rgba(182, 182, 182, .6) !default;
 $orange-color:               #f96332 !default;
 
-$default:       #344675 !default;
-$primary:       #6b94ff !default;
+$default:       $blue-grey !default;
+$primary:       $blue !default;
 $secondary:     #f4f5f7 !default;
-$success:       #67cc9a !default;
-$info:          $teal !default;
-$warning:       #f9c969 !default;
-$danger:        #f06393 !default;
+$success:       $green !default;
+$info:          $purple !default;
+$warning:       $orange !default;
+$danger:        $red !default;
 $black:         #14172e !default;
 
 
 // gradient
 $default-states:       #263148 !default;
-$primary-states:       #ba54f5 !default;
-$success-states:       #93d377 !default;
-$info-states:          #3358f4 !default;
-$warning-states:       #ff6491 !default;
-$danger-states:        #ec250d !default;
+$primary-states:       #1976d2 !default;
+$success-states:       #388e3c !default;
+$info-states:          #7b1fa2 !default;
+$warning-states:       #f57c00 !default;
+$danger-states:        #d32f2f !default;
 $black-states:         #1d253b !default;
 
 $background-black:           #14172e !default;
@@ -206,13 +208,6 @@ $common-colors: map-merge(
   ),
   $common-colors
 );
-
-$default-states:       #263148 !default;
-$primary-states:       #ba54f5 !default;
-$success-states:       #93d377 !default;
-$info-states:          #3358f4 !default;
-$warning-states:       #ff6491 !default;
-$danger-states:        #ec250d !default;
 
 
 $common-states: () !default;

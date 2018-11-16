@@ -1,12 +1,19 @@
 @mixin diagonal-gradient($start-color, $end-color) {
-  background: linear-gradient(to bottom left, $start-color, $end-color, $start-color);
-  background-position: top right;
-  background-size: 210% 210%;
+  background: $start-color;
+
+  @if ($enable-gradients) {
+    background: linear-gradient(to bottom left, $start-color, $end-color, $start-color);
+    background-position: top right;
+    background-size: 210% 210%;
+  }
 }
 
 @mixin linear-gradient($color, $states-color){
   background: $color;
-  background: linear-gradient(0deg, $color 0%, $states-color 100%);
+
+  @if ($enable-gradients) {
+    background: linear-gradient(0deg, $color 0%, $states-color 100%);
+  }
 }
 
 @mixin linear-gradient-right($color, $states-color){

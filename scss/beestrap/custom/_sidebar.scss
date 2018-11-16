@@ -392,6 +392,7 @@
 
   &[data="red"] {
     @include linear-gradient($danger-states, $danger);
+
     &::before {
       border-bottom-color: $danger;
     }
@@ -485,8 +486,13 @@
   float: right;
   width: $full-width;
   min-height: 100vh;
-  background: linear-gradient($background-black, $background-states-black);
-  //border-top: 2px solid $primary;
+
+  @if ($enable-gradients) {
+    background: linear-gradient($background-black, $background-states-black);
+  } @else {
+    background: $background-black;
+  }
+
 
   @include transitions(.5s, cubic-bezier(.685, .0473, .346, 1));
 
