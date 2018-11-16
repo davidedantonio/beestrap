@@ -24133,48 +24133,36 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .card-stats .info-icon {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
+  background: #6b94ff;
   border-radius: 50%;
-  background: linear-gradient(to bottom left, #6b94ff, #ba54f5, #6b94ff);
-  background-position: top right;
-  background-size: 210% 210%;
 }
 
 .card-stats .info-icon i {
-  padding: 14px 13px;
-  font-size: 1.7em;
+  padding: 17px 13px;
+  font-size: 2.3em;
   color: #fff;
 }
 
 .card-stats .info-icon.icon-danger {
-  background: linear-gradient(to bottom left, #f06393, #ec250d, #f06393);
-  background-position: top right;
-  background-size: 210% 210%;
+  background: #f06393;
 }
 
 .card-stats .info-icon.icon-warning {
-  background: linear-gradient(to bottom left, #f9c969, #ff6491, #f9c969);
-  background-position: top right;
-  background-size: 210% 210%;
+  background: #f9c969;
 }
 
 .card-stats .info-icon.icon-success {
-  background: linear-gradient(to bottom left, #67cc9a, #93d377, #67cc9a);
-  background-position: top right;
-  background-size: 210% 210%;
+  background: #67cc9a;
 }
 
 .card-stats .info-icon.icon-info {
-  background: linear-gradient(to bottom left, #11cdef, #3358f4, #11cdef);
-  background-position: top right;
-  background-size: 210% 210%;
+  background: #11cdef;
 }
 
 .card-stats .info-icon.icon-primary {
-  background: linear-gradient(to bottom left, #6b94ff, #ba54f5, #6b94ff);
-  background-position: top right;
-  background-size: 210% 210%;
+  background: #6b94ff;
 }
 
 .card-stats .numbers {

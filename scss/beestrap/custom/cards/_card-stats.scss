@@ -8,36 +8,35 @@
   @extend %card-stats;
 
   .info-icon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    background: $primary;
     border-radius: 50%;
 
-    @include diagonal-gradient($primary, $primary-states);
-
     i {
-      padding: 14px 13px;
-      font-size: 1.7em;
+      padding: 17px 13px;
+      font-size: 2.3em;
       color: $white;
     }
 
     &.icon-danger {
-      @include diagonal-gradient($danger, $danger-states);
+      background: $danger;
     }
 
     &.icon-warning {
-      @include diagonal-gradient($warning, $warning-states);
+      background: $warning;
     }
 
     &.icon-success {
-      @include diagonal-gradient($success, $success-states);
+      background: $success;
     }
 
     &.icon-info {
-      @include diagonal-gradient($info, $info-states);
+      background: $info;
     }
 
     &.icon-primary {
-      @include diagonal-gradient($primary, $primary-states);
+      background: $primary;
     }
   }
 

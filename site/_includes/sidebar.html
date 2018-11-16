@@ -20,13 +20,23 @@
         {%- assign active = 'active' -%}
       {%- endif -%}
       <li>
-        <a data-toggle="collapse" href="#{{ group_slug }}">
-          <i class="bee-icons {{ group.icon }}"></i>
-          <p>
-            {{ group.title }}
-            <b class="caret"></b>
-          </p>
-        </a>
+        {%- if group.pages | size != 0 -%}
+          <a data-toggle="collapse" href="#{{ group_slug }}">
+            <i class="bee-icons {{ group.icon }}"></i>
+            <p>
+              {{ group.title }}
+              <b class="caret"></b>
+            </p>
+          </a>
+        {%- else -%}
+          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/{{ group_slug }}/">
+            <i class="bee-icons {{ group.icon }}"></i>
+            <p>
+              {{ group.title }}
+              <b class="caret"></b>
+            </p>
+          </a>
+        {%- endif -%}
         <div class="collapse" id="{{ group_slug }}">
           <ul class="nav">
             {%- for doc in group.pages -%}
