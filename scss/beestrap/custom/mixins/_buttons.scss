@@ -1,5 +1,6 @@
 @mixin btn-styles($btn-color, $btn-states-color) {
   @include diagonal-gradient($btn-color, $btn-states-color);
+
   background-color: $btn-color;
   box-shadow: none;
   transition: all .15s ease;
@@ -187,8 +188,6 @@
     }
   }
 
-  // Disabled comes first so active can properly restyle
-  &.disabled,
   &:disabled {
     color: color-yiq($background);
     background-color: $background;

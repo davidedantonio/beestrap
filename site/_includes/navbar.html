@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg bg-white">
   <div class="container-fluid">
     <div class="navbar-wrapper">
       <div class="navbar-toggle d-inline">
@@ -10,7 +10,7 @@
         </button>
       </div>
       <a class="navbar-brand" href="#">
-        Page Title
+        {{ page.title }}
       </a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,9 +20,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="navbar-nav ml-auto ">
-        <div class="search-bar input-group">
-          <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="bee-icons fas fa-search"></i></button>
-        </div>
         <li class="dropdown nav-item">
           <a href="#" class="dropdown-toggle dropdown-black nav-link" data-toggle="dropdown">
             <div class="notification d-none d-lg-block d-xl-block"></div>
@@ -31,7 +28,7 @@
               New Notifications
             </p>
           </a>
-          <ul class="dropdown-menu dropdown-black dropdown-menu-right dropdown-navbar">
+          <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
             <li class="nav-link">
               <a href="#" class="nav-item dropdown-item">Mike John responded to your email</a>
             </li>
@@ -49,30 +46,6 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown nav-item">
-          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-            <div class="photo">
-              <img src="{{ site.baseurl }}/docs/assets/img/milena.jpg">
-            </div>
-            <b class="caret d-none d-lg-block d-xl-block"></b>
-            <p class="d-lg-none">
-              Log out
-            </p>
-          </a>
-          <ul class="dropdown-menu dropdown-black dropdown-navbar">
-            <li class="nav-link">
-              <a href="#" class="nav-item dropdown-item">Profile</a>
-            </li>
-            <li class="nav-link">
-              <a href="#" class="nav-item dropdown-item">Settings</a>
-            </li>
-            <div class="dropdown-divider"></div>
-            <li class="nav-link">
-              <a href="#" class="nav-item dropdown-item">Log out</a>
-            </li>
-          </ul>
-        </li>
-        <li class="separator d-lg-none"></li>
       </ul>
     </div>
   </div>

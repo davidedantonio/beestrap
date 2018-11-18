@@ -1,5 +1,6 @@
 ---
 layout: docs
+title: Dashboard
 ---
 <div class="row">
   <div class="col-12">
