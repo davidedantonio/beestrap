@@ -138,13 +138,13 @@ layout: docs
             <div class="col-lg-8 ml-auto mr-auto">
               <div class="row">
                 <div class="col-md-4">
-                  <button class="btn btn-primary btn-block" onclick="">Top Left (TODO)</button>
+                  <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','left')">Top Left</button>
                 </div>
                 <div class="col-md-4">
-                  <button class="btn btn-primary btn-block" onclick="">Top Center (TODO)</button>
+                  <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','center')">Top Center</button>
                 </div>
                 <div class="col-md-4">
-                  <button class="btn btn-primary btn-block" onclick="">Top Right (TODO)</button>
+                  <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','right')">Top Right</button>
                 </div>
               </div>
             </div>
@@ -153,13 +153,13 @@ layout: docs
             <div class="col-lg-8 ml-auto mr-auto">
               <div class="row">
                 <div class="col-md-4">
-                  <button class="btn btn-primary btn-block" onclick="">Bottom Left (TODO)</button>
+                  <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','left')">Bottom Left</button>
                 </div>
                 <div class="col-md-4">
-                  <button class="btn btn-primary btn-block" onclick="">Bottom Center (TODO)</button>
+                  <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','center')">Bottom Center</button>
                 </div>
                 <div class="col-md-4">
-                  <button class="btn btn-primary btn-block" onclick="">Bottom Right (TODO)</button>
+                  <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','right')">Bottom Right</button>
                 </div>
               </div>
             </div>
