@@ -1,7 +1,6 @@
 const colors = ['', 'info', 'success', 'warning', 'danger'];
 const demo = {
-  initDashboardPageCharts: function() {
-
+  initDashboardPageCharts: () => {
     gradientChartOptionsConfigurationWithTooltipBlue = {
       maintainAspectRatio: false,
       legend: {
@@ -48,7 +47,7 @@ const demo = {
           }
         }]
       }
-    };
+    }
 
     gradientChartOptionsConfigurationWithTooltipPurple = {
       maintainAspectRatio: false,
@@ -96,7 +95,7 @@ const demo = {
           }
         }]
       }
-    };
+    }
 
     gradientChartOptionsConfigurationWithTooltipOrange = {
       maintainAspectRatio: false,
@@ -144,7 +143,7 @@ const demo = {
           }
         }]
       }
-    };
+    }
 
     gradientChartOptionsConfigurationWithTooltipGreen = {
       maintainAspectRatio: false,
@@ -192,7 +191,7 @@ const demo = {
           }
         }]
       }
-    };
+    }
 
     gradientBarChartConfiguration = {
       maintainAspectRatio: false,
@@ -240,15 +239,14 @@ const demo = {
           }
         }]
       }
-    };
+    }
 
-    let ctx = document.getElementById("chartLinePurple").getContext("2d");
+    let ctx = document.getElementById("chartLinePurple").getContext("2d")
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
-
-    gradientStroke.addColorStop(1, 'rgba(94, 114, 228,0.2)');
-    gradientStroke.addColorStop(0.2, 'rgba(94, 114, 228,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+    gradientStroke.addColorStop(1, 'rgba(94, 114, 228,0.2)')
+    gradientStroke.addColorStop(0.2, 'rgba(94, 114, 228,0.0)')
+    gradientStroke.addColorStop(0, 'rgba(119,52,169,0)') //purple colors
 
     let data = {
       labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
@@ -269,22 +267,19 @@ const demo = {
         pointRadius: 4,
         data: [80, 100, 70, 80, 120, 80],
       }]
-    };
-
+    }
     let myChart = new Chart(ctx, {
       type: 'line',
       data: data,
       options: gradientChartOptionsConfigurationWithTooltipPurple
-    });
+    })
 
+    let ctxGreen = document.getElementById("chartLineGreen").getContext("2d")
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-    let ctxGreen = document.getElementById("chartLineGreen").getContext("2d");
-
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
-
-    gradientStroke.addColorStop(1, 'rgba(66,134,121,0.15)');
-    gradientStroke.addColorStop(0.4, 'rgba(66,134,121,0.0)'); //green colors
-    gradientStroke.addColorStop(0, 'rgba(66,134,121,0)'); //green colors
+    gradientStroke.addColorStop(1, 'rgba(66,134,121,0.15)')
+    gradientStroke.addColorStop(0.4, 'rgba(66,134,121,0.0)') //green colors
+    gradientStroke.addColorStop(0, 'rgba(66,134,121,0)') //green colors
 
     let data = {
       labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV'],
@@ -305,26 +300,23 @@ const demo = {
         pointRadius: 4,
         data: [90, 27, 60, 12, 80],
       }]
-    };
+    }
 
     let myChart = new Chart(ctxGreen, {
       type: 'line',
       data: data,
       options: gradientChartOptionsConfigurationWithTooltipGreen
 
-    });
+    })
 
-    let chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    let chart_data = [200, 240, 230, 300, 320, 300, 400, 350, 300, 450, 400, 375];
+    let chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+    let chart_data = [200, 240, 230, 300, 320, 300, 400, 350, 300, 450, 400, 375]
+    let ctx = document.getElementById("chartBig1").getContext('2d')
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
-
-    let ctx = document.getElementById("chartBig1").getContext('2d');
-
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
-
-    gradientStroke.addColorStop(1, 'rgba(94, 114, 228,0.1)');
-    gradientStroke.addColorStop(0.4, 'rgba(94, 114, 228,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+    gradientStroke.addColorStop(1, 'rgba(94, 114, 228,0.1)')
+    gradientStroke.addColorStop(0.4, 'rgba(94, 114, 228,0.0)')
+    gradientStroke.addColorStop(0, 'rgba(119,52,169,0)') //purple colors
     let config = {
       type: 'line',
       data: {
@@ -348,39 +340,40 @@ const demo = {
         }]
       },
       options: gradientChartOptionsConfigurationWithTooltipPurple
-    };
+    }
+
     let myChartData = new Chart(ctx, config);
-    $("#0").click(function() {
-      let data = myChartData.config.data;
-      data.datasets[0].data = chart_data;
-      data.labels = chart_labels;
-      myChartData.update();
-    });
-    $("#1").click(function() {
-      let chart_data = [400, 350, 300, 450, 400, 375, 200, 240, 230, 300, 320, 300];
-      let data = myChartData.config.data;
-      data.datasets[0].data = chart_data;
-      data.labels = chart_labels;
-      myChartData.update();
-    });
 
-    $("#2").click(function() {
-      let chart_data = [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130];
-      let data = myChartData.config.data;
-      data.datasets[0].data = chart_data;
-      data.labels = chart_labels;
-      myChartData.update();
-    });
+    $("#0").click(() => {
+      let data = myChartData.config.data
+      data.datasets[0].data = chart_data
+      data.labels = chart_labels
+      myChartData.update()
+    })
 
+    $("#1").click(() => {
+      let chart_data = [400, 350, 300, 450, 400, 375, 200, 240, 230, 300, 320, 300]
+      let data = myChartData.config.data
+      data.datasets[0].data = chart_data
+      data.labels = chart_labels
+      myChartData.update()
+    })
 
-    let ctx = document.getElementById("CountryChart").getContext("2d");
+    $("#2").click(() => {
+      let chart_data = [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130]
+      let data = myChartData.config.data
+      data.datasets[0].data = chart_data
+      data.labels = chart_labels
+      myChartData.update()
+    })
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    let ctx = document.getElementById("CountryChart").getContext("2d")
 
-    gradientStroke.addColorStop(1, 'rgba(29,140,248,0.2)');
-    gradientStroke.addColorStop(0.4, 'rgba(29,140,248,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(29,140,248,0)'); //blue colors
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
+    gradientStroke.addColorStop(1, 'rgba(29, 140, 248, 0.2)')
+    gradientStroke.addColorStop(0.4, 'rgba(29, 140, 248, 0.0)')
+    gradientStroke.addColorStop(0, 'rgba(29, 140, 248, 0)') //blue colors
 
     let myChart = new Chart(ctx, {
       type: 'bar',
@@ -403,7 +396,7 @@ const demo = {
         }]
       },
       options: gradientBarChartConfiguration
-    });
+    })
   },
 
   /**
@@ -411,18 +404,18 @@ const demo = {
    * @param {*} from
    * @param {*} align
    */
-  showNotification: function(from, align) {
+  showNotification: (from, align) => {
     let color = Math.floor((Math.random() * 4) + 1)
+
     $.notify({
       icon: "bee-icons far fa-bell",
       message: "Welcome to <b>Beestrap Dashboard</b> - a beautiful free resource for every web developer."
     } , {
       type: colors[color],
-      timer: 8000,
       placement: {
         from: from,
         align: align
       }
-    });
+    })
   }
 }
