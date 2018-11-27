@@ -26,21 +26,67 @@
   .input-group.form-control-lg{
     .form-control{
       height: 100%;
-      padding: $padding-vertical - 1 $padding-horizontal - 1;
+      padding: $padding-vertical - 1 $padding-horizontal;
 
       & + .input-group-prepend .input-group-text,
       & + .input-group-append .input-group-text{
-        padding: $padding-vertical - 1 $padding-horizontal - 1 $padding-vertical - 1 0;
+        padding: $padding-vertical - 1 $padding-horizontal $padding-vertical - 1 0;
       }
     }
 
     .input-group-prepend .input-group-text,
     .input-group-append .input-group-text{
-      padding: $padding-vertical - 1 0 $padding-vertical $padding-horizontal - 1;
+      padding: $padding-vertical - 1 0 $padding-vertical $padding-horizontal;
 
       & + .form-control{
-        padding: $padding-vertical  $padding-horizontal - 1 $padding-vertical $padding-horizontal - 3;
+        padding: $padding-vertical  $padding-horizontal $padding-vertical $padding-horizontal - 3;
       }
     }
   }
+}
+
+@mixin input-base-padding($padding-vertical, $padding-horizontal) {
+
+  .form-group.no-border,
+  .input-group.no-border {
+    .form-control {
+      padding: $padding-vertical $padding-horizontal;
+
+      & + .input-group-prepend .input-group-text,
+      & + .input-group-append .input-group-text {
+        padding: $padding-vertical $padding-horizontal $padding-vertical 0;
+      }
+    }
+
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text {
+      padding: $padding-vertical 0 $padding-vertical $padding-horizontal;
+    }
+  }
+
+  .form-group,
+  .input-group {
+    .form-control {
+      padding: $padding-vertical - 1 $padding-horizontal $padding-vertical - 1 $padding-horizontal;
+
+      & + .input-group-prepend .input-group-text,
+      & + .input-group-append .input-group-text {
+        padding: $padding-vertical - 1 $padding-horizontal $padding-vertical - 1 0;
+      }
+    }
+
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text {
+      padding: $padding-vertical - 1 0 $padding-vertical - 1 $padding-horizontal;
+
+      & + .form-control,
+      & ~ .form-control {
+        padding: $padding-vertical - 1 $padding-horizontal $padding-vertical $padding-horizontal - 3;
+      }
+    }
+  }
+}
+
+@mixin input-size($padding-vertical, $padding-horizontal) {
+  padding: $padding-vertical $padding-horizontal;
 }
