@@ -62,7 +62,7 @@ $line-height-sm:              1.5 !default;
 $line-height:                 1.35em !default;
 
 
-$opacity-gray-3:             rgba(222, 222, 222, .3) !default;
+$opacity-gray-3:             rgba(34, 19, 19, .3) !default;
 $opacity-gray-5:             rgba(222, 222, 222, .5) !default;
 $opacity-gray-8:             rgba(222, 222, 222, .8) !default;
 
@@ -357,8 +357,7 @@ $padding-round-horizontal:     23px !default;
 $padding-lg-vertical:       15px !default;
 
 $padding-input-vertical:        11px !default;
-$padding-input-horizontal:      19px !default;
-
+$padding-input-horizontal:      0 !default;
 
 $margin-lg-vertical:           30px !default;
 $margin-base-vertical:         15px !default;

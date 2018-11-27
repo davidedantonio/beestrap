@@ -3,10 +3,12 @@
 
 .form-control {
   border-color: lighten($black, 20%);
-  border-radius: $border-radius-lg;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
 
   @include transition-input-focus-color();
-
 
   &:focus{
     background-color: $input-bg;
@@ -76,7 +78,7 @@
 .has-danger .input-group-prepend .input-group-text,
 .has-danger.input-group-focus .input-group-prepend .input-group-text,
 .has-danger.input-group-focus .input-group-append .input-group-text {
-  color: $danger-states;
+  color: $danger-states !important;
   background-color: rgba(222, 222, 222, .1);
   border-color: lighten($danger-states, 5%);
 

@@ -19479,7 +19479,7 @@ fieldset[disabled]
 .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus,
 .bootstrap-select .dropdown-menu.inner li a:hover,
 .bootstrap-select .dropdown-menu.inner li a:focus {
-  background-color: rgba(222, 222, 222, 0.3);
+  background-color: rgba(34, 19, 19, 0.3);
 }
 
 .dropdown-menu .dropdown-item.disabled, .dropdown-menu .dropdown-item:disabled,
@@ -21878,7 +21878,10 @@ table.tablesorter thead tr .headerSortDown {
 
 .form-control {
   border-color: #333b75;
-  border-radius: 0.2585rem;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
   transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
@@ -21946,7 +21949,7 @@ table.tablesorter thead tr .headerSortDown {
 .has-danger .input-group-prepend .input-group-text,
 .has-danger.input-group-focus .input-group-prepend .input-group-text,
 .has-danger.input-group-focus .input-group-append .input-group-text {
-  color: #d32f2f;
+  color: #d32f2f !important;
   background-color: rgba(222, 222, 222, 0.1);
   border-color: #d74444;
 }
@@ -22147,84 +22150,84 @@ img {
 
 .form-group.no-border.form-control-lg .input-group-append .input-group-text,
 .input-group.no-border.form-control-lg .input-group-append .input-group-text {
-  padding: 15px 0 15px 19px;
+  padding: 15px 0 15px 0;
 }
 
 .form-group.no-border.form-control-lg .form-control,
 .input-group.no-border.form-control-lg .form-control {
-  padding: 15px 19px;
+  padding: 15px 0;
 }
 
 .form-group.no-border.form-control-lg .form-control + .input-group-prepend .input-group-text,
 .form-group.no-border.form-control-lg .form-control + .input-group-append .input-group-text,
 .input-group.no-border.form-control-lg .form-control + .input-group-prepend .input-group-text,
 .input-group.no-border.form-control-lg .form-control + .input-group-append .input-group-text {
-  padding: 15px 19px 15px 0;
+  padding: 15px 0 15px 0;
 }
 
 .form-group.form-control-lg .form-control,
 .input-group.form-control-lg .form-control {
   height: 100%;
-  padding: 14px 18px;
+  padding: 14px 0;
 }
 
 .form-group.form-control-lg .form-control + .input-group-prepend .input-group-text,
 .form-group.form-control-lg .form-control + .input-group-append .input-group-text,
 .input-group.form-control-lg .form-control + .input-group-prepend .input-group-text,
 .input-group.form-control-lg .form-control + .input-group-append .input-group-text {
-  padding: 14px 18px 14px 0;
+  padding: 14px 0 14px 0;
 }
 
 .form-group.form-control-lg .input-group-prepend .input-group-text,
 .form-group.form-control-lg .input-group-append .input-group-text,
 .input-group.form-control-lg .input-group-prepend .input-group-text,
 .input-group.form-control-lg .input-group-append .input-group-text {
-  padding: 14px 0 15px 18px;
+  padding: 14px 0 15px 0;
 }
 
 .form-group.form-control-lg .input-group-prepend .input-group-text + .form-control,
 .form-group.form-control-lg .input-group-append .input-group-text + .form-control,
 .input-group.form-control-lg .input-group-prepend .input-group-text + .form-control,
 .input-group.form-control-lg .input-group-append .input-group-text + .form-control {
-  padding: 15px 18px 15px 16px;
+  padding: 15px 0 15px -3;
 }
 
 .form-group.no-border .form-control,
 .input-group.no-border .form-control {
-  padding: 11px 19px;
+  padding: 11px 0;
 }
 
 .form-group.no-border .form-control + .input-group-prepend .input-group-text,
 .form-group.no-border .form-control + .input-group-append .input-group-text,
 .input-group.no-border .form-control + .input-group-prepend .input-group-text,
 .input-group.no-border .form-control + .input-group-append .input-group-text {
-  padding: 11px 19px 11px 0;
+  padding: 11px 0 11px 0;
 }
 
 .form-group.no-border .input-group-prepend .input-group-text,
 .form-group.no-border .input-group-append .input-group-text,
 .input-group.no-border .input-group-prepend .input-group-text,
 .input-group.no-border .input-group-append .input-group-text {
-  padding: 11px 0 11px 19px;
+  padding: 11px 0 11px 0;
 }
 
 .form-group .form-control,
 .input-group .form-control {
-  padding: 10px 18px 10px 18px;
+  padding: 10px 0 10px 0;
 }
 
 .form-group .form-control + .input-group-prepend .input-group-text,
 .form-group .form-control + .input-group-append .input-group-text,
 .input-group .form-control + .input-group-prepend .input-group-text,
 .input-group .form-control + .input-group-append .input-group-text {
-  padding: 10px 18px 10px 0;
+  padding: 10px 0 10px 0;
 }
 
 .form-group .input-group-prepend .input-group-text,
 .form-group .input-group-append .input-group-text,
 .input-group .input-group-prepend .input-group-text,
 .input-group .input-group-append .input-group-text {
-  padding: 10px 0 10px 18px;
+  padding: 10px 0 10px 0;
 }
 
 .form-group .input-group-prepend .input-group-text + .form-control,
@@ -22235,7 +22238,7 @@ img {
 .input-group .input-group-prepend .input-group-text ~ .form-control,
 .input-group .input-group-append .input-group-text + .form-control,
 .input-group .input-group-append .input-group-text ~ .form-control {
-  padding: 10px 19px 11px 16px;
+  padding: 10px 0 11px -3;
 }
 
 .form-group.no-border .form-control,
@@ -23050,7 +23053,7 @@ textarea.form-control:focus, textarea.form-control:active {
 .light-content .input-group.no-border .form-control + .input-group-append .input-group-text,
 .light-content .input-group.no-border .input-group-prepend .input-group-text,
 .light-content .input-group.no-border .input-group-append .input-group-text {
-  background-color: rgba(222, 222, 222, 0.3);
+  background-color: rgba(34, 19, 19, 0.3);
 }
 
 .light-content .form-group.no-border .form-control:focus, .light-content .form-group.no-border .form-control:active, .light-content .form-group.no-border .form-control:active,
@@ -23653,7 +23656,7 @@ textarea.form-control:focus, textarea.form-control:active {
 .card.card-white .input-group.no-border .form-control + .input-group-append .input-group-text,
 .card.card-white .input-group.no-border .input-group-prepend .input-group-text,
 .card.card-white .input-group.no-border .input-group-append .input-group-text {
-  background-color: rgba(222, 222, 222, 0.3);
+  background-color: rgba(34, 19, 19, 0.3);
 }
 
 .card.card-white .form-group.no-border .form-control:focus, .card.card-white .form-group.no-border .form-control:active, .card.card-white .form-group.no-border .form-control:active,

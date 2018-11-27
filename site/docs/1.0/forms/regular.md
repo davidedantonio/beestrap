@@ -11,7 +11,7 @@ layout: docs
         <form method="#" action="#">
           <label>Email address</label>
           <div class="form-group">
-            <input type="email" class="form-control">
+            <input type="email" class="form-control simple">
           </div>
           <label>Password</label>
           <div class="form-group">
