@@ -24598,7 +24598,7 @@ textarea.form-control:focus, textarea.form-control:active {
 
 .bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker .table-condensed .btn[data-action="togglePeriod"]:hover,
 .bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker .table-condensed .separator {
-  color: #9a9a9a !important;
+  color: #fff !important;
 }
 
 .bootstrap-datetimepicker-widget.dropdown-menu .table-condensed .month,

@@ -77,7 +77,7 @@ const beestrap = {
           clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
-      });
+      }).show();
     }
 
     if ($(".datepicker").length != 0) {
@@ -94,7 +94,7 @@ const beestrap = {
           clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
-      });
+      }).show();
     }
 
     if ($(".timepicker").length != 0) {
@@ -112,7 +112,7 @@ const beestrap = {
           clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
-      });
+      }).show();
     }
   },
 
