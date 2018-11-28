@@ -1,40 +1,54 @@
-$(document).on('click', '.navbar-toggle', function() {
+$(document).on('click', '.navbar-toggle', () => {
   $toggle = $(this);
 
-  if (blackDashboard.misc.navbar_menu_visible == 1) {
+  if (beestrap.misc.navbar_menu_visible == 1) {
     $('html').removeClass('nav-open');
-    blackDashboard.misc.navbar_menu_visible = 0;
-    setTimeout(function() {
+    beestrap.misc.navbar_menu_visible = 0;
+    setTimeout(() => {
       $toggle.removeClass('toggled');
       $('#bodyClick').remove();
     }, 550);
 
   } else {
-    setTimeout(function() {
+    setTimeout(() => {
       $toggle.addClass('toggled');
     }, 580);
 
     div = '<div id="bodyClick"></div>';
-    $(div).appendTo('body').click(function() {
+    $(div).appendTo('body').click(() => {
       $('html').removeClass('nav-open');
-      blackDashboard.misc.navbar_menu_visible = 0;
-      setTimeout(function() {
+      beestrap.misc.navbar_menu_visible = 0;
+      setTimeout(() => {
         $toggle.removeClass('toggled');
         $('#bodyClick').remove();
       }, 550);
     });
 
     $('html').addClass('nav-open');
-    blackDashboard.misc.navbar_menu_visible = 1;
+    beestrap.misc.navbar_menu_visible = 1;
   }
 });
 
-blackDashboard = {
+const debounce = (func, wait, immediate) => {
+  var timeout;
+  return () => {
+    var context = this,
+      args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    }, wait);
+    if (immediate && !timeout) func.apply(context, args);
+  };
+};
+
+const beestrap = {
   misc: {
     navbar_menu_visible: 0
   },
 
-  checkScrollForTransparentNavbar: debounce(function() {
+  checkScrollForTransparentNavbar: debounce(() => {
     if ($(document).scrollTop() > scroll_distance) {
       if (transparent) {
         transparent = false;
@@ -48,22 +62,19 @@ blackDashboard = {
     }
   }, 17),
 
-
-
-  // Activate DateTimePicker
-
-  initDateTimePicker: function() {
+  // DateTimePicker default init
+  initDateTimePicker: () => {
     if ($(".datetimepicker").length != 0) {
       $('.datetimepicker').datetimepicker({
         icons: {
-          time: "tim-icons icon-watch-time",
-          date: "tim-icons icon-calendar-60",
-          up: "fa fa-chevron-up",
-          down: "fa fa-chevron-down",
-          previous: 'tim-icons icon-minimal-left',
-          next: 'tim-icons icon-minimal-right',
+          time: "bee-icons far fa-clock",
+          date: "bee-icons far fa-calendar",
+          up: "fas fa-chevron-up",
+          down: "fas fa-chevron-down",
+          previous: 'fas fa-chevron-left',
+          next: 'fas fa-chevron-right',
           today: 'fa fa-screenshot',
-          clear: 'fa fa-trash',
+          clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
       });
@@ -73,14 +84,14 @@ blackDashboard = {
       $('.datepicker').datetimepicker({
         format: 'MM/DD/YYYY',
         icons: {
-          time: "tim-icons icon-watch-time",
-          date: "tim-icons icon-calendar-60",
-          up: "fa fa-chevron-up",
-          down: "fa fa-chevron-down",
-          previous: 'tim-icons icon-minimal-left',
-          next: 'tim-icons icon-minimal-right',
+          time: "bee-icons far fa-clock",
+          date: "bee-icons far fa-calendar",
+          up: "fas fa-chevron-up",
+          down: "fas fa-chevron-down",
+          previous: 'fas fa-chevron-left',
+          next: 'fas fa-chevron-right',
           today: 'fa fa-screenshot',
-          clear: 'fa fa-trash',
+          clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
       });
@@ -91,52 +102,50 @@ blackDashboard = {
         // format: 'H:mm',    // use this format if you want the 24hours timepicker
         format: 'h:mm A', //use this format if you want the 12hours timpiecker with AM/PM toggle
         icons: {
-          time: "tim-icons icon-watch-time",
-          date: "tim-icons icon-calendar-60",
-          up: "fa fa-chevron-up",
-          down: "fa fa-chevron-down",
-          previous: 'tim-icons icon-minimal-left',
-          next: 'tim-icons icon-minimal-right',
+          time: "bee-icons far fa-clock",
+          date: "bee-icons far fa-calendar",
+          up: "fas fa-chevron-up",
+          down: "fas fa-chevron-down",
+          previous: 'fas fa-chevron-left',
+          next: 'fas fa-chevron-right',
           today: 'fa fa-screenshot',
-          clear: 'fa fa-trash',
+          clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
       });
     }
   },
 
-  initMinimizeSidebar: function() {
+  initMinimizeSidebar: () => {
     if ($('.sidebar-mini').length != 0) {
       sidebar_mini_active = true;
     }
 
-    $('.minimize-sidebar').click(function() {
+    $('.minimize-sidebar').click(() => {
       var $btn = $(this);
 
       if (sidebar_mini_active == true) {
         $('body').removeClass('sidebar-mini');
         sidebar_mini_active = false;
-        blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+        beestrap.showSidebarMessage('Sidebar mini deactivated...');
       } else {
         $('body').addClass('sidebar-mini');
         sidebar_mini_active = true;
-        blackDashboard.showSidebarMessage('Sidebar mini activated...');
+        beestrap.showSidebarMessage('Sidebar mini activated...');
       }
 
-      // we simulate the window Resize so the charts will get updated in realtime.
-      var simulateWindowResize = setInterval(function() {
+      var simulateWindowResize = setInterval(() => {
         window.dispatchEvent(new Event('resize'));
       }, 180);
 
-      // we stop the simulation of Window Resize after the animations are completed
-      setTimeout(function() {
+      setTimeout(() => {
         clearInterval(simulateWindowResize);
       }, 1000);
     });
   },
 
-  startAnimationForLineChart: function(chart) {
-    chart.on('draw', function(data) {
+  startAnimationForLineChart: (chart) => {
+    chart.on('draw', (data) => {
       if (data.type === 'line' || data.type === 'area') {
         data.element.animate({
           d: {
@@ -163,9 +172,10 @@ blackDashboard = {
 
     seq = 0;
   },
-  startAnimationForBarChart: function(chart) {
 
-    chart.on('draw', function(data) {
+  startAnimationForBarChart: (chart) => {
+
+    chart.on('draw', (data) => {
       if (data.type === 'bar') {
         seq2++;
         data.element.animate({
@@ -182,10 +192,11 @@ blackDashboard = {
 
     seq2 = 0;
   },
-  showSidebarMessage: function(message) {
+
+  showSidebarMessage: (message) => {
     try {
       $.notify({
-        icon: "tim-icons icon-bell-55",
+        icon: "bee-icons far fa-bell",
         message: message
       }, {
         type: 'primary',
