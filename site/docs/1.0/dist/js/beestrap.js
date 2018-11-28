@@ -43,7 +43,7 @@ const debounce = (func, wait, immediate) => {
   };
 };
 
-const blackDashboard = {
+const beestrap = {
   misc: {
     navbar_menu_visible: 0
   },
@@ -62,22 +62,19 @@ const blackDashboard = {
     }
   }, 17),
 
-
-
-  // Activate DateTimePicker
-
+  // DateTimePicker default init
   initDateTimePicker: function() {
     if ($(".datetimepicker").length != 0) {
       $('.datetimepicker').datetimepicker({
         icons: {
-          time: "tim-icons icon-watch-time",
-          date: "tim-icons icon-calendar-60",
-          up: "fa fa-chevron-up",
-          down: "fa fa-chevron-down",
-          previous: 'tim-icons icon-minimal-left',
-          next: 'tim-icons icon-minimal-right',
+          time: "bee-icons far fa-clock",
+          date: "bee-icons far fa-calendar",
+          up: "fas fa-chevron-up",
+          down: "fas fa-chevron-down",
+          previous: 'fas fa-chevron-left',
+          next: 'fas fa-chevron-right',
           today: 'fa fa-screenshot',
-          clear: 'fa fa-trash',
+          clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
       });
@@ -87,14 +84,14 @@ const blackDashboard = {
       $('.datepicker').datetimepicker({
         format: 'MM/DD/YYYY',
         icons: {
-          time: "tim-icons icon-watch-time",
-          date: "tim-icons icon-calendar-60",
-          up: "fa fa-chevron-up",
-          down: "fa fa-chevron-down",
-          previous: 'tim-icons icon-minimal-left',
-          next: 'tim-icons icon-minimal-right',
+          time: "bee-icons far fa-clock",
+          date: "bee-icons far fa-calendar",
+          up: "fas fa-chevron-up",
+          down: "fas fa-chevron-down",
+          previous: 'fas fa-chevron-left',
+          next: 'fas fa-chevron-right',
           today: 'fa fa-screenshot',
-          clear: 'fa fa-trash',
+          clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
       });
@@ -105,14 +102,14 @@ const blackDashboard = {
         // format: 'H:mm',    // use this format if you want the 24hours timepicker
         format: 'h:mm A', //use this format if you want the 12hours timpiecker with AM/PM toggle
         icons: {
-          time: "tim-icons icon-watch-time",
-          date: "tim-icons icon-calendar-60",
-          up: "fa fa-chevron-up",
-          down: "fa fa-chevron-down",
-          previous: 'tim-icons icon-minimal-left',
-          next: 'tim-icons icon-minimal-right',
+          time: "bee-icons far fa-clock",
+          date: "bee-icons far fa-calendar",
+          up: "fas fa-chevron-up",
+          down: "fas fa-chevron-down",
+          previous: 'fas fa-chevron-left',
+          next: 'fas fa-chevron-right',
           today: 'fa fa-screenshot',
-          clear: 'fa fa-trash',
+          clear: 'fas fa-trash',
           close: 'fa fa-remove'
         }
       });
@@ -177,6 +174,7 @@ const blackDashboard = {
 
     seq = 0;
   },
+
   startAnimationForBarChart: function(chart) {
 
     chart.on('draw', function(data) {
@@ -196,6 +194,7 @@ const blackDashboard = {
 
     seq2 = 0;
   },
+
   showSidebarMessage: function(message) {
     try {
       $.notify({
