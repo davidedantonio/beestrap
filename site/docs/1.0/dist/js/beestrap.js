@@ -212,3 +212,13 @@ const beestrap = {
 
   }
 };
+
+$(document).ready(() => {
+  // bootstrap-select
+  if ($(".selectpicker").length != 0) {
+    $(".selectpicker").selectpicker({
+      iconBase: "bee-icons",
+      tickIcon: "fas fa-check"
+    });
+  }
+})
