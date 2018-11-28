@@ -64,6 +64,7 @@
 .has-success .input-group-append .input-group-text,
 .has-success .input-group-prepend .input-group-text,
 .has-success .form-control {
+  color: $success-states !important;
   border-color: lighten($black, 5%);
 }
 

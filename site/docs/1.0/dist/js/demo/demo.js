@@ -275,13 +275,13 @@ const demo = {
     })
 
     let ctxGreen = document.getElementById("chartLineGreen").getContext("2d")
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
+    gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
     gradientStroke.addColorStop(1, 'rgba(66,134,121,0.15)')
     gradientStroke.addColorStop(0.4, 'rgba(66,134,121,0.0)') //green colors
     gradientStroke.addColorStop(0, 'rgba(66,134,121,0)') //green colors
 
-    let data = {
+    data = {
       labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV'],
       datasets: [{
         label: "My First dataset",
@@ -302,7 +302,7 @@ const demo = {
       }]
     }
 
-    let myChart = new Chart(ctxGreen, {
+    myChart = new Chart(ctxGreen, {
       type: 'line',
       data: data,
       options: gradientChartOptionsConfigurationWithTooltipGreen
@@ -311,8 +311,8 @@ const demo = {
 
     let chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
     let chart_data = [200, 240, 230, 300, 320, 300, 400, 350, 300, 450, 400, 375]
-    let ctx = document.getElementById("chartBig1").getContext('2d')
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
+    ctx = document.getElementById("chartBig1").getContext('2d')
+    gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
     gradientStroke.addColorStop(1, 'rgba(94, 114, 228,0.1)')
     gradientStroke.addColorStop(0.4, 'rgba(94, 114, 228,0.0)')
@@ -367,15 +367,15 @@ const demo = {
       myChartData.update()
     })
 
-    let ctx = document.getElementById("CountryChart").getContext("2d")
+    ctx = document.getElementById("CountryChart").getContext("2d")
 
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
+    gradientStroke = ctx.createLinearGradient(0, 230, 0, 50)
 
     gradientStroke.addColorStop(1, 'rgba(29, 140, 248, 0.2)')
     gradientStroke.addColorStop(0.4, 'rgba(29, 140, 248, 0.0)')
     gradientStroke.addColorStop(0, 'rgba(29, 140, 248, 0)') //blue colors
 
-    let myChart = new Chart(ctx, {
+    myChart = new Chart(ctx, {
       type: 'bar',
       responsive: true,
       legend: {

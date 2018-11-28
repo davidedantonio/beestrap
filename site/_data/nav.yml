@@ -17,6 +17,7 @@
   icon: fas fa-file
   pages:
     - title: Regular
+    - title: Complex Components
 - title: Pages
   icon: fas fa-image
   pages:

@@ -76,7 +76,6 @@
   @include form-control-placeholder(rgba($black, .4), 1);
 
   .has-danger {
-
     .form-control,
     .input-group-prepend .input-group-text {
       border-color: $danger-states;
