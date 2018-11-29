@@ -400,7 +400,7 @@
   .progress-container.progress.sm {
     .progress {
       background: rgba($black, .1);
-      box-shadow: 0 0 0 3px rgba($black, .1);
+      // box-shadow: 0 0 0 3px rgba($black, .1);
 
       .progress-value {
         color: $default;

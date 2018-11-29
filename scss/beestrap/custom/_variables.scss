@@ -103,7 +103,6 @@ $colors: map-merge(
 );
 
 $default-color-opacity:      rgba(182, 182, 182, .6) !default;
-$orange-color:               #f96332 !default;
 
 $default:       $blue-grey !default;
 $primary:       $blue !default;
@@ -129,11 +128,11 @@ $background-states-black:    #1e1e24 !default;
 
 // opacity
 $default-opacity:      rgba(182, 182, 182, .6) !default;
-$primary-opacity:      rgba(249, 99, 50, .3) !default;
-$success-opacity:      rgba(24, 206, 15, .3) !default;
-$info-opacity:         rgba(44, 168, 255, .3) !default;
-$warning-opacity:      rgba(255, 178, 54, .3) !default;
-$danger-opacity:       rgba(255, 54, 54, .3) !default;
+$primary-opacity:      rgba($primary, .3) !default;
+$success-opacity:      rgba($success, .3) !default;
+$info-opacity:         rgba($info, .3) !default;
+$warning-opacity:      rgba($warning, .3) !default;
+$danger-opacity:       rgba($danger, .3) !default;
 
 $light-gray:                 #e3e3e3 !default;
 $medium-gray:                #ddd !default;

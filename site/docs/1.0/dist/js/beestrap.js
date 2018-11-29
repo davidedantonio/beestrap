@@ -210,6 +210,28 @@ const beestrap = {
       console.log('Notify library is missing, please make sure you have the notifications library added.');
     }
 
+  },
+
+  initSliders: () => {
+    let slider = document.getElementById('regularSlider');
+    noUiSlider.create(slider, {
+      start: 40,
+      connect: [true, false],
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+
+    slider = document.getElementById('doubleSlider');
+    noUiSlider.create(slider, {
+      start: [20, 60],
+      connect: true,
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
   }
 };
 
