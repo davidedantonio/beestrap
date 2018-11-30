@@ -113,7 +113,7 @@ layout: docs
       <div class="card-header">
         <h4 class="card-title">Progress Bars</h4>
       </div>
-      <div class="card-body ">
+      <div class="card-body">
         <div class="progress-container">
           <span class="progress-badge">Default</span>
           <div class="progress">
@@ -158,13 +158,25 @@ layout: docs
     </div>
   </div>
   <div class="col-md-6">
-    <h4 class="card-title mt-3">Sliders</h4>
-    <div id="regularSlider" class="slider">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Sliders</h4>
+      </div>
+      <div class="card-body">
+        <div id="regularSlider" class="slider"></div>
+        <br>
+        <div id="doubleSlider" class="slider slider-primary mb-3"></div>
+      </div>
+      <div class="card-header">
+        <h4 class="card-title">Tags</h4>
+      </div>
+      <div class="card-body">
+        <input type="text" value="Amsterdam,Rome,New York" class="tagsinput" data-role="tagsinput" data-color="primary" />
+      </div>
     </div>
-    <br>
-    <div id="doubleSlider" class="slider slider-primary mb-3"></div>
   </div>
 </div>
+
 <script type="text/javascript">
   $(document).ready(() => {
     beestrap.initDateTimePicker();

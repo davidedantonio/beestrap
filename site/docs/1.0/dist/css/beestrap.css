@@ -21452,6 +21452,51 @@ table.tablesorter thead tr .headerSortDown {
   font-size: .8em;
 }
 
+.badge-default {
+  color: #fff;
+  background-color: #4b626d;
+}
+
+.badge-default[href]:hover, .badge-default[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #455a64;
+}
+
+.badge-default .tagsinput-remove-link {
+  color: #fff;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #2077a2;
+}
+
+.badge-primary[href]:hover, .badge-primary[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #1e6d95;
+}
+
+.badge-primary .tagsinput-remove-link {
+  color: #fff;
+}
+
+.badge-secondary {
+  color: #212529;
+  background-color: #d6dae2;
+}
+
+.badge-secondary[href]:hover, .badge-secondary[href]:focus {
+  color: #212529;
+  text-decoration: none;
+  background-color: #ced2db;
+}
+
+.badge-secondary .tagsinput-remove-link {
+  color: #fff;
+}
+
 .badge-success {
   color: #fff;
   background-color: #3d8b40;
@@ -21465,6 +21510,86 @@ table.tablesorter thead tr .headerSortDown {
 
 .badge-success .tagsinput-remove-link {
   color: #fff;
+}
+
+.badge-info {
+  color: #fff;
+  background-color: #771e86;
+}
+
+.badge-info[href]:hover, .badge-info[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #6c1b7a;
+}
+
+.badge-info .tagsinput-remove-link {
+  color: #fff;
+}
+
+.badge-warning {
+  color: #fff;
+  background-color: #cc7a00;
+}
+
+.badge-warning[href]:hover, .badge-warning[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #bd7000;
+}
+
+.badge-warning .tagsinput-remove-link {
+  color: #fff;
+}
+
+.badge-danger {
+  color: #fff;
+  background-color: #ea1c0d;
+}
+
+.badge-danger[href]:hover, .badge-danger[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #dc1a0c;
+}
+
+.badge-danger .tagsinput-remove-link {
+  color: #fff;
+}
+
+.bootstrap-tagsinput.default-badge .tag {
+  color: #fff;
+  background: #4b626d;
+}
+
+.bootstrap-tagsinput.primary-badge .tag {
+  color: #fff;
+  background: #2077a2;
+}
+
+.bootstrap-tagsinput.secondary-badge .tag {
+  color: #fff;
+  background: #d6dae2;
+}
+
+.bootstrap-tagsinput.success-badge .tag {
+  color: #fff;
+  background: #3d8b40;
+}
+
+.bootstrap-tagsinput.info-badge .tag {
+  color: #fff;
+  background: #771e86;
+}
+
+.bootstrap-tagsinput.warning-badge .tag {
+  color: #fff;
+  background: #cc7a00;
+}
+
+.bootstrap-tagsinput.danger-badge .tag {
+  color: #fff;
+  background: #ea1c0d;
 }
 
 .form-check {
@@ -25881,5 +26006,75 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .slider.slider-danger .noUi-handle {
   background-color: #f44336;
   box-shadow: 0px 0px 10px 0px #f44336;
+}
+
+.bootstrap-tagsinput {
+  display: inline-block;
+  padding: 4px 6px;
+  max-width: 100%;
+  line-height: 22px;
+}
+
+.bootstrap-tagsinput input {
+  border: none;
+  color: #9a9a9a;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0;
+  width: 74px;
+  max-width: inherit;
+}
+
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder,
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+
+.bootstrap-tagsinput .badge {
+  cursor: pointer;
+  margin: 5px 3px 5px 0;
+  position: relative;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1.5em;
+  padding-left: 0.8em;
+}
+
+.bootstrap-tagsinput .badge:hover {
+  padding-right: 22px;
+}
+
+.bootstrap-tagsinput .badge:hover [data-role="remove"] {
+  opacity: 1;
+  padding-right: 4px;
+}
+
+.bootstrap-tagsinput .badge [data-role="remove"] {
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  opacity: 0;
+  background-color: transparent;
+}
+
+.bootstrap-tagsinput .badge [data-role="remove"]::after {
+  content: "\00d7";
+  padding: 0px 2px;
 }
 /*# sourceMappingURL=beestrap.css.map */

@@ -243,4 +243,11 @@ $(document).ready(() => {
       tickIcon: "fas fa-check"
     });
   }
+
+  // bootstrap-tagsinput
+  if ($(".tagsinput").length != 0) {
+    const tagClass = $('.tagsinput').data('color');
+    $('.tagsinput').tagsinput();
+    $('.bootstrap-tagsinput').addClass('' + tagClass + '-badge');
+  }
 })

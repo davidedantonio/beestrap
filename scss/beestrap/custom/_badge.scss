@@ -19,6 +19,17 @@
   }
 }
 
-.badge-success {
-  @include badge-theme(darken($success, 10%));
+@each $color, $value in $common-colors {
+  .badge-#{$color} {
+    @include badge-theme(darken($value, 10%));
+  }
+}
+
+.bootstrap-tagsinput {
+  @each $color, $value in $common-colors {
+    &.#{$color}-badge .tag {
+      color: $white;
+      background: darken($value, 10%);
+    }
+  }
 }
